@@ -1,0 +1,1428 @@
+{
+  "schema_version": 2,
+  "updated_at": "2026-10-08T10:58:12+08:00",
+  "collection_status": "partial",
+  "statistics": {
+    "sources_total": 8,
+    "sources_successful": 6,
+    "jobs_total": 25,
+    "phd_jobs": 17
+  },
+  "sources": [
+    {
+      "name": "山东大学人才招聘网",
+      "type": "高校",
+      "website": "https://www.sdu.edu.cn/",
+      "url": "https://rsrczp.sdu.edu.cn/",
+      "method": "官方人才招聘网 HTML 列表与详情解析",
+      "status": "error",
+      "found": null,
+      "new": 0,
+      "last_attempt_at": "2026-10-08T10:58:12+08:00",
+      "last_success_at": null,
+      "error": "HTTPSConnectionPool(host='rsrczp.sdu.edu.cn', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not val"
+    },
+    {
+      "name": "山东第一医科大学人事部",
+      "type": "高校",
+      "website": "https://www.sdfmu.edu.cn/",
+      "url": "https://personnel.sdfmu.edu.cn/",
+      "method": "官方人事部招聘栏目 HTML 列表与详情解析",
+      "status": "ok",
+      "found": 5,
+      "new": 0,
+      "last_attempt_at": "2026-10-08T10:58:12+08:00",
+      "last_success_at": "2026-10-08T10:58:12+08:00",
+      "error": ""
+    },
+    {
+      "name": "山东大学齐鲁医院",
+      "type": "医院",
+      "website": "https://www.qiluhospital.com/",
+      "url": "https://www.qiluhospital.com/list-313-2.html",
+      "method": "官方人事招聘栏目 HTML 列表与详情解析；HTTP 420 时只记录失败，不绕过限制",
+      "status": "error",
+      "found": null,
+      "new": 0,
+      "last_attempt_at": "2026-10-08T10:58:12+08:00",
+      "last_success_at": null,
+      "error": "420 Client Error: for url: https://www.qiluhospital.com/list-313-2.html"
+    },
+    {
+      "name": "山东省立医院",
+      "type": "医院",
+      "website": "https://www.sph.com.cn/",
+      "url": "https://www.sph.com.cn/Html/News/Columns/124/Index.html",
+      "method": "官方招聘公告栏目 HTML 列表与详情解析",
+      "status": "ok",
+      "found": 1,
+      "new": 0,
+      "last_attempt_at": "2026-10-08T10:58:12+08:00",
+      "last_success_at": "2026-10-08T10:58:12+08:00",
+      "error": ""
+    },
+    {
+      "name": "山东第一医科大学附属肿瘤医院",
+      "type": "医院",
+      "website": "https://www.sd-cancer.com/",
+      "url": "https://www.sd-cancer.com/tender_sub/",
+      "method": "官方人才招聘栏目 HTML 列表、详情及附件解析",
+      "status": "ok",
+      "found": 13,
+      "new": 13,
+      "last_attempt_at": "2026-10-08T10:58:12+08:00",
+      "last_success_at": "2026-10-08T10:58:12+08:00",
+      "error": ""
+    },
+    {
+      "name": "济南大学人力资源处",
+      "type": "高校",
+      "website": "https://rsc.ujn.edu.cn/",
+      "url": "https://rsc.ujn.edu.cn/rczp.htm",
+      "method": "官方人才招聘栏目 HTML 列表、详情及附件解析",
+      "status": "ok",
+      "found": 1,
+      "new": 1,
+      "last_attempt_at": "2026-10-08T10:58:12+08:00",
+      "last_success_at": "2026-10-08T10:58:12+08:00",
+      "error": ""
+    },
+    {
+      "name": "齐鲁工业大学人事处",
+      "type": "高校",
+      "website": "https://rsc.qlu.edu.cn/",
+      "url": "https://rsc.qlu.edu.cn/575/list.htm",
+      "method": "官方招聘栏目 HTML 列表、详情及附件解析",
+      "status": "ok",
+      "found": 1,
+      "new": 1,
+      "last_attempt_at": "2026-10-08T10:58:12+08:00",
+      "last_success_at": "2026-10-08T10:58:12+08:00",
+      "error": ""
+    },
+    {
+      "name": "山东师范大学人力资源处",
+      "type": "高校",
+      "website": "https://rsc.sdnu.edu.cn/",
+      "url": "https://rsc.sdnu.edu.cn/gkzp.htm",
+      "method": "官方公开招聘栏目 HTML 列表、详情及附件解析",
+      "status": "ok",
+      "found": 1,
+      "new": 1,
+      "last_attempt_at": "2026-10-08T10:58:12+08:00",
+      "last_success_at": "2026-10-08T10:58:12+08:00",
+      "error": ""
+    }
+  ],
+  "jobs": [
+    {
+      "id": "e2ed87efb6fdd794cb52",
+      "source": "山东第一医科大学附属肿瘤医院",
+      "source_aliases": [
+        "山东省肿瘤医院",
+        "山东省肿瘤防治研究院",
+        "山东第一医科大学附属肿瘤医院"
+      ],
+      "type": "医院",
+      "title": "山东第一医科大学附属肿瘤医院2026年度第二批次博士后招聘公告",
+      "url": "https://www.sd-cancer.com/tender_sub/2026/NbWQNxey.html",
+      "published": "2026-10-05",
+      "published_evidence": "列表项：山东第一医科大学附属肿瘤医院2026年度第二批次博士后招聘公告 2026-10-05",
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "未核实",
+      "degree": "未核实",
+      "specialties": [
+        "基础医学"
+      ],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {},
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 10,
+        "reasons": [
+          "公告明确提及博士后",
+          "匹配优先专业：基础医学"
+        ],
+        "specialties": [
+          "基础医学"
+        ],
+        "restrictions": [],
+        "is_postdoc": true
+      },
+      "phd": true,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "4a8e0f1a204340b42858"
+    },
+    {
+      "id": "0b9f178436c84299dcfd",
+      "source": "山东省立医院",
+      "source_aliases": [
+        "山东第一医科大学附属省立医院",
+        "山东省立医院"
+      ],
+      "type": "医院",
+      "title": "山东第一医科大学附属省立医院（山东省立医院）2026年专科医师规范化培训招收简章",
+      "url": "https://www.sph.com.cn/Html/News/Articles/42175.html",
+      "published": "2026-09-02",
+      "published_evidence": "列表项：2026/09/02 山东第一医科大学附属省立医院（山东省立医院）2026年专科医师规范化培训招收简章",
+      "application_start": "2026-08-27",
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "（学位）证书原件及复印件",
+      "degree": "）证书原件及复印件",
+      "specialties": [],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [
+        {
+          "name": "附件1：山东第一医科大学附属省立医院简介",
+          "url": "https://www.sph.com.cn/Sites/Uploaded/File/2026/09/026392396934671068722680949.docx",
+          "format": "docx",
+          "parsed": true,
+          "parse_error": null
+        },
+        {
+          "name": "附件2：材料整理顺序单",
+          "url": "https://www.sph.com.cn/Sites/Uploaded/File/2026/09/026392396934671068721194283.doc",
+          "format": "doc",
+          "parsed": false,
+          "parse_error": "旧版二进制 Office 格式暂不自动解析，请打开官方附件核实"
+        },
+        {
+          "name": "附件3：委培专科医师单位推荐信",
+          "url": "https://www.sph.com.cn/Sites/Uploaded/File/2026/09/026392396934671068728588146.doc",
+          "format": "doc",
+          "parsed": false,
+          "parse_error": "旧版二进制 Office 格式暂不自动解析，请打开官方附件核实"
+        }
+      ],
+      "evidence": {
+        "application_start": "报名时间：2026年8月27日",
+        "education": "学历（学位）证书原件及复印件",
+        "degree": "学位）证书原件及复印件"
+      },
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 7,
+        "reasons": [
+          "公告明确提及博士后",
+          "存在资格限制，需人工核实"
+        ],
+        "specialties": [],
+        "restrictions": [
+          "要求医师资格证",
+          "要求住院医师规范化培训",
+          "要求特定职称"
+        ],
+        "is_postdoc": true
+      },
+      "phd": true,
+      "restrictions": [
+        "要求医师资格证",
+        "要求住院医师规范化培训",
+        "要求特定职称"
+      ],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:12:42+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": false,
+      "revisions": [
+        {
+          "observed_at": "2026-10-08T10:58:12+08:00",
+          "previous_fingerprint": "a6a7884e0da22f326743",
+          "summary": "公告结构化字段发生变化，请核对官方原文"
+        }
+      ],
+      "fingerprint": "756313b9c35baaf67c7d"
+    },
+    {
+      "id": "fef66c436cd405f37166",
+      "source": "山东第一医科大学附属肿瘤医院",
+      "source_aliases": [
+        "山东省肿瘤医院",
+        "山东省肿瘤防治研究院",
+        "山东第一医科大学附属肿瘤医院"
+      ],
+      "type": "医院",
+      "title": "山东第一医科大学附属肿瘤医院2026年博士后招聘公告",
+      "url": "https://www.sd-cancer.com/tender_sub/2026/zbqlD2ap.html",
+      "published": "2026-06-22",
+      "published_evidence": "列表项：山东第一医科大学附属肿瘤医院2026年博士后招聘公告 2026-06-22",
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "未核实",
+      "degree": "未核实",
+      "specialties": [
+        "基础医学"
+      ],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {},
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 10,
+        "reasons": [
+          "公告明确提及博士后",
+          "匹配优先专业：基础医学"
+        ],
+        "specialties": [
+          "基础医学"
+        ],
+        "restrictions": [],
+        "is_postdoc": true
+      },
+      "phd": true,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "1ab2fba47db57c3f6a8d"
+    },
+    {
+      "id": "4e34bb51e6c56e550adc",
+      "source": "山东省立医院",
+      "type": "医院",
+      "title": "关于山东第一医科大学附属省立医院（山东省立医院）2026年中级岗位工作人员公开招聘核减人数的公告",
+      "url": "https://www.sph.com.cn/Html/News/Articles/38807.html",
+      "published": "2026-06-13",
+      "deadline": null,
+      "phd": false,
+      "deadline_status": "未核实",
+      "collected_at": "2026-10-08T10:12:42+08:00",
+      "first_seen": "2026-10-08T10:12:42+08:00",
+      "phd_relevance": {
+        "category": "非目标岗位",
+        "score": 0,
+        "reasons": [
+          "标题属于结果、公示、考试或招生信息"
+        ],
+        "specialties": [],
+        "restrictions": [],
+        "is_postdoc": false
+      },
+      "specialties": [],
+      "restrictions": [],
+      "excluded": true,
+      "excluded_reason": "非招聘公告、结果公示、考试安排、规培或招生信息"
+    },
+    {
+      "id": "180511e1cba02e27d029",
+      "source": "山东省立医院",
+      "type": "医院",
+      "title": "山东第一医科大学附属省立医院（山东省立医院） 2026年公开招聘聘用制工作人员进入考核范围人员名单",
+      "url": "https://www.sph.com.cn/Html/News/Articles/38453.html",
+      "published": "2026-05-26",
+      "deadline": null,
+      "phd": false,
+      "deadline_status": "未核实",
+      "collected_at": "2026-10-08T10:12:42+08:00",
+      "first_seen": "2026-10-08T10:12:42+08:00",
+      "phd_relevance": {
+        "category": "非目标岗位",
+        "score": 0,
+        "reasons": [
+          "标题属于结果、公示、考试或招生信息"
+        ],
+        "specialties": [],
+        "restrictions": [],
+        "is_postdoc": false
+      },
+      "specialties": [],
+      "restrictions": [],
+      "excluded": true,
+      "excluded_reason": "非招聘公告、结果公示、考试安排、规培或招生信息"
+    },
+    {
+      "id": "b409ea42dc9a9d1b4af4",
+      "source": "山东第一医科大学附属肿瘤医院",
+      "source_aliases": [
+        "山东省肿瘤医院",
+        "山东省肿瘤防治研究院",
+        "山东第一医科大学附属肿瘤医院"
+      ],
+      "type": "医院",
+      "title": "山东第一医科大学附属肿瘤医院PET-CT医师招聘简章",
+      "url": "https://www.sd-cancer.com/tender_sub/2026/mepk8QdM.html",
+      "published": "2026-04-24",
+      "published_evidence": "列表项：山东第一医科大学附属肿瘤医院PET-CT医师招聘简章 2026-04-24",
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "学位,否则不予接收",
+      "degree": ",否则不予接收",
+      "specialties": [
+        "基础医学",
+        "生物医学"
+      ],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {
+        "education": "学历学位,否则不予接收",
+        "degree": "学位,否则不予接收"
+      },
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 9,
+        "reasons": [
+          "公告明确提及博士或高层次人才",
+          "匹配优先专业：基础医学、生物医学",
+          "存在资格限制，需人工核实"
+        ],
+        "specialties": [
+          "基础医学",
+          "生物医学"
+        ],
+        "restrictions": [
+          "要求医师资格证"
+        ],
+        "is_postdoc": false
+      },
+      "phd": true,
+      "restrictions": [
+        "要求医师资格证"
+      ],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "e538a3a703f702814ae8"
+    },
+    {
+      "id": "725ea95d50054f6d72c4",
+      "source": "山东第一医科大学附属肿瘤医院",
+      "source_aliases": [
+        "山东省肿瘤医院",
+        "山东省肿瘤防治研究院",
+        "山东第一医科大学附属肿瘤医院"
+      ],
+      "type": "医院",
+      "title": "山东第一医科大学附属肿瘤医院影像医师招聘简章",
+      "url": "https://www.sd-cancer.com/tender_sub/2026/xbojVYag.html",
+      "published": "2026-04-24",
+      "published_evidence": "列表项：山东第一医科大学附属肿瘤医院影像医师招聘简章 2026-04-24",
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "学位,否则不予接收",
+      "degree": ",否则不予接收",
+      "specialties": [
+        "基础医学"
+      ],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {
+        "education": "学历学位,否则不予接收",
+        "degree": "学位,否则不予接收"
+      },
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 9,
+        "reasons": [
+          "公告明确提及博士或高层次人才",
+          "匹配优先专业：基础医学",
+          "存在资格限制，需人工核实"
+        ],
+        "specialties": [
+          "基础医学"
+        ],
+        "restrictions": [
+          "要求医师资格证",
+          "要求特定职称"
+        ],
+        "is_postdoc": false
+      },
+      "phd": true,
+      "restrictions": [
+        "要求医师资格证",
+        "要求特定职称"
+      ],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "5a43984a4f556e46cd48"
+    },
+    {
+      "id": "0da372413cfd67d500b2",
+      "source": "济南大学人力资源处",
+      "source_aliases": [
+        "济南大学"
+      ],
+      "type": "高校",
+      "title": "济南大学2026年公开招聘人员公告",
+      "url": "https://rsc.ujn.edu.cn/info/1006/4543.htm",
+      "published": "2026-03-27",
+      "published_evidence": "列表项：济南大学2026年公开招聘人员公告 2026-03-27",
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "学位证书",
+      "degree": "授予权",
+      "specialties": [],
+      "recruitment_count": "1",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {
+        "education": "学历学位证书",
+        "degree": "学位授予权",
+        "recruitment_count": "招聘人数 1"
+      },
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 7,
+        "reasons": [
+          "公告明确提及博士后"
+        ],
+        "specialties": [],
+        "restrictions": [],
+        "is_postdoc": true
+      },
+      "phd": true,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "4c6d12a0c531b7ca4c30"
+    },
+    {
+      "id": "b5bd79941a318e41f685",
+      "source": "山东第一医科大学附属肿瘤医院",
+      "source_aliases": [
+        "山东省肿瘤医院",
+        "山东省肿瘤防治研究院",
+        "山东第一医科大学附属肿瘤医院"
+      ],
+      "type": "医院",
+      "title": "山东第一医科大学附属肿瘤医院2026年第三批招聘简章",
+      "url": "https://www.sd-cancer.com/tender_sub/2026/negpvZaw.html",
+      "published": "2026-03-09",
+      "published_evidence": "列表项：山东第一医科大学附属肿瘤医院2026年第三批招聘简章 2026-03-09",
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "学位",
+      "degree": "未核实",
+      "specialties": [
+        "基础医学"
+      ],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {
+        "education": "学历学位"
+      },
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 9,
+        "reasons": [
+          "公告明确提及博士或高层次人才",
+          "匹配优先专业：基础医学"
+        ],
+        "specialties": [
+          "基础医学"
+        ],
+        "restrictions": [],
+        "is_postdoc": false
+      },
+      "phd": true,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "67eba10a85cea7d20f01"
+    },
+    {
+      "id": "cb0269d417d7846dc67c",
+      "source": "山东第一医科大学附属肿瘤医院",
+      "source_aliases": [
+        "山东省肿瘤医院",
+        "山东省肿瘤防治研究院",
+        "山东第一医科大学附属肿瘤医院"
+      ],
+      "type": "医院",
+      "title": "山东第一医科大学附属肿瘤医院2026年第二批招聘简章",
+      "url": "https://www.sd-cancer.com/tender_sub/2026/NbWP3Wdy.html",
+      "published": "2026-01-12",
+      "published_evidence": "列表项：山东第一医科大学附属肿瘤医院2026年第二批招聘简章 2026-01-12",
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "学位",
+      "degree": "未核实",
+      "specialties": [
+        "基础医学"
+      ],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {
+        "education": "学历学位"
+      },
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "可能符合专业",
+        "score": 3,
+        "reasons": [
+          "匹配优先专业：基础医学"
+        ],
+        "specialties": [
+          "基础医学"
+        ],
+        "restrictions": [],
+        "is_postdoc": false
+      },
+      "phd": false,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "b95f33a9b1f790f7be0a"
+    },
+    {
+      "id": "dae08a7720023ad723d6",
+      "source": "山东第一医科大学附属肿瘤医院",
+      "source_aliases": [
+        "山东省肿瘤医院",
+        "山东省肿瘤防治研究院",
+        "山东第一医科大学附属肿瘤医院"
+      ],
+      "type": "医院",
+      "title": "山东第一医科大学附属肿瘤医院放疗技术员招聘简章",
+      "url": "https://www.sd-cancer.com/tender_sub/2025/Ddw0DMe1.html",
+      "published": "2025-12-02",
+      "published_evidence": "列表项：山东第一医科大学附属肿瘤医院放疗技术员招聘简章 2025-12-02",
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "未核实",
+      "degree": "未核实",
+      "specialties": [
+        "基础医学",
+        "生物医学"
+      ],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {},
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "可能符合专业",
+        "score": 3,
+        "reasons": [
+          "匹配优先专业：基础医学、生物医学"
+        ],
+        "specialties": [
+          "基础医学",
+          "生物医学"
+        ],
+        "restrictions": [],
+        "is_postdoc": false
+      },
+      "phd": false,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "b607ade04cd405719662"
+    },
+    {
+      "id": "f5a50b75ec203df467f2",
+      "source": "山东第一医科大学附属肿瘤医院",
+      "source_aliases": [
+        "山东省肿瘤医院",
+        "山东省肿瘤防治研究院",
+        "山东第一医科大学附属肿瘤医院"
+      ],
+      "type": "医院",
+      "title": "山东第一医科大学附属肿瘤医院曹连宝教授课题组博士后招聘公告",
+      "url": "https://www.sd-cancer.com/tender_sub/2025/DbDqVKdl.html",
+      "published": "2025-11-07",
+      "published_evidence": "列表项：山东第一医科大学附属肿瘤医院曹连宝教授课题组博士后招聘公告 2025-11-07",
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "未核实",
+      "degree": "未核实",
+      "specialties": [
+        "基础医学"
+      ],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {},
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 10,
+        "reasons": [
+          "公告明确提及博士后",
+          "匹配优先专业：基础医学"
+        ],
+        "specialties": [
+          "基础医学"
+        ],
+        "restrictions": [],
+        "is_postdoc": true
+      },
+      "phd": true,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "5aed5baaa43bd8893f00"
+    },
+    {
+      "id": "08234c86a549d11fdc41",
+      "source": "山东第一医科大学附属肿瘤医院",
+      "source_aliases": [
+        "山东省肿瘤医院",
+        "山东省肿瘤防治研究院",
+        "山东第一医科大学附属肿瘤医院"
+      ],
+      "type": "医院",
+      "title": "山东第一医科大学附属肿瘤医院柴杰教授课题组博士后招聘公告",
+      "url": "https://www.sd-cancer.com/tender_sub/2025/6dBrYYd7.html",
+      "published": "2025-11-07",
+      "published_evidence": "列表项：山东第一医科大学附属肿瘤医院柴杰教授课题组博士后招聘公告 2025-11-07",
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "未核实",
+      "degree": "未核实",
+      "specialties": [
+        "分子生物学",
+        "基础医学"
+      ],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {},
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 10,
+        "reasons": [
+          "公告明确提及博士后",
+          "匹配优先专业：分子生物学、基础医学",
+          "存在资格限制，需人工核实"
+        ],
+        "specialties": [
+          "分子生物学",
+          "基础医学"
+        ],
+        "restrictions": [
+          "要求特定职称"
+        ],
+        "is_postdoc": true
+      },
+      "phd": true,
+      "restrictions": [
+        "要求特定职称"
+      ],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "6131b72274f912b993f6"
+    },
+    {
+      "id": "b34cd1e4983b1a77686c",
+      "source": "山东第一医科大学附属肿瘤医院",
+      "source_aliases": [
+        "山东省肿瘤医院",
+        "山东省肿瘤防治研究院",
+        "山东第一医科大学附属肿瘤医院"
+      ],
+      "type": "医院",
+      "title": "山东第一医科大学附属肿瘤医院李慧慧教授课题组博士后招聘公告",
+      "url": "https://www.sd-cancer.com/tender_sub/2025/9aA6Ylbv.html",
+      "published": "2025-11-07",
+      "published_evidence": "列表项：山东第一医科大学附属肿瘤医院李慧慧教授课题组博士后招聘公告 2025-11-07",
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "未核实",
+      "degree": "教学案例库",
+      "specialties": [
+        "基础医学"
+      ],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {
+        "degree": "学位教学案例库"
+      },
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 10,
+        "reasons": [
+          "公告明确提及博士后",
+          "匹配优先专业：基础医学",
+          "存在资格限制，需人工核实"
+        ],
+        "specialties": [
+          "基础医学"
+        ],
+        "restrictions": [
+          "要求特定职称"
+        ],
+        "is_postdoc": true
+      },
+      "phd": true,
+      "restrictions": [
+        "要求特定职称"
+      ],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "43b34d491877532a14f4"
+    },
+    {
+      "id": "9a2c7c353da904423139",
+      "source": "山东第一医科大学附属肿瘤医院",
+      "source_aliases": [
+        "山东省肿瘤医院",
+        "山东省肿瘤防治研究院",
+        "山东第一医科大学附属肿瘤医院"
+      ],
+      "type": "医院",
+      "title": "山东第一医科大学附属肿瘤医院李振江教授课题组博士后招聘公告",
+      "url": "https://www.sd-cancer.com/tender_sub/2025/kaz6wyaJ.html",
+      "published": "2025-11-07",
+      "published_evidence": "列表项：山东第一医科大学附属肿瘤医院李振江教授课题组博士后招聘公告 2025-11-07",
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "未核实",
+      "degree": "未核实",
+      "specialties": [
+        "基础医学",
+        "生物医学"
+      ],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {},
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 10,
+        "reasons": [
+          "公告明确提及博士后",
+          "匹配优先专业：基础医学、生物医学"
+        ],
+        "specialties": [
+          "基础医学",
+          "生物医学"
+        ],
+        "restrictions": [],
+        "is_postdoc": true
+      },
+      "phd": true,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "6f4b230c5e1d2a80b6fb"
+    },
+    {
+      "id": "87c549da50f5ab082a17",
+      "source": "山东第一医科大学附属肿瘤医院",
+      "source_aliases": [
+        "山东省肿瘤医院",
+        "山东省肿瘤防治研究院",
+        "山东第一医科大学附属肿瘤医院"
+      ],
+      "type": "医院",
+      "title": "山东第一医科大学附属肿瘤医院孙晓蓉教授课题组博士后招聘公告",
+      "url": "https://www.sd-cancer.com/tender_sub/2025/PdywvnaQ.html",
+      "published": "2025-11-07",
+      "published_evidence": "列表项：山东第一医科大学附属肿瘤医院孙晓蓉教授课题组博士后招聘公告 2025-11-07",
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "未核实",
+      "degree": "未核实",
+      "specialties": [
+        "基础医学"
+      ],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {},
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 10,
+        "reasons": [
+          "公告明确提及博士后",
+          "匹配优先专业：基础医学"
+        ],
+        "specialties": [
+          "基础医学"
+        ],
+        "restrictions": [],
+        "is_postdoc": true
+      },
+      "phd": true,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "e4bf84502372652ea183"
+    },
+    {
+      "id": "623781766c3e168b836d",
+      "source": "山东第一医科大学附属肿瘤医院",
+      "source_aliases": [
+        "山东省肿瘤医院",
+        "山东省肿瘤防治研究院",
+        "山东第一医科大学附属肿瘤医院"
+      ],
+      "type": "医院",
+      "title": "山东第一医科大学附属肿瘤医院王海永教授课题组博士后招聘公告",
+      "url": "https://www.sd-cancer.com/tender_sub/2025/7ax6rBdy.html",
+      "published": "2025-11-07",
+      "published_evidence": "列表项：山东第一医科大学附属肿瘤医院王海永教授课题组博士后招聘公告 2025-11-07",
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "未核实",
+      "degree": "未核实",
+      "specialties": [],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {},
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 7,
+        "reasons": [
+          "公告明确提及博士后"
+        ],
+        "specialties": [],
+        "restrictions": [],
+        "is_postdoc": true
+      },
+      "phd": true,
+      "restrictions": [],
+      "detail_error": "本轮详情解析预算已用完，需人工核实",
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "94b705f2fe7845b0a6e6"
+    },
+    {
+      "id": "1029956b2076ac247a56",
+      "source": "山东第一医科大学人事部",
+      "type": "高校",
+      "title": "南开大学以“四个强化”深入推进新时代人才队伍建设",
+      "url": "https://personnel.sdfmu.edu.cn/info/1060/4961.htm",
+      "published": "2025-05-27",
+      "deadline": null,
+      "phd": false,
+      "deadline_status": "未核实",
+      "collected_at": "2026-10-08T10:12:28+08:00",
+      "first_seen": "2026-10-08T10:12:28+08:00",
+      "phd_relevance": {
+        "category": "非目标岗位",
+        "score": 0,
+        "reasons": [
+          "未识别到博士或优先专业依据"
+        ],
+        "specialties": [],
+        "restrictions": [],
+        "is_postdoc": false
+      },
+      "specialties": [],
+      "restrictions": [],
+      "excluded": true,
+      "excluded_reason": "非招聘公告、结果公示、考试安排、规培或招生信息"
+    },
+    {
+      "id": "3e88da16b2e074f62de3",
+      "source": "齐鲁工业大学人事处",
+      "source_aliases": [
+        "齐鲁工业大学",
+        "山东省科学院"
+      ],
+      "type": "高校",
+      "title": "齐鲁工业大学（山东省科学院）2026年公开招聘人员公告（第三批长期招聘）",
+      "url": "https://rsc.qlu.edu.cn/2026/0914/c575a283655/page.htm",
+      "published": null,
+      "published_evidence": null,
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "学位作为条件应聘",
+      "degree": "授权一级学科、 1 个博士专业学位授权类别 、 18 个硕士",
+      "specialties": [
+        "分子生物学",
+        "药理学"
+      ],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [
+        {
+          "name": "齐鲁工业大学（山东省科学院）2026年公开招聘岗位汇总表.xls",
+          "url": "https://rsc.qlu.edu.cn/_upload/article/files/13/db/42a2e33449b483d814cd1ee87922/63b4a7a1-b0ec-4410-9de4-f8402e078457.xls",
+          "format": "xls",
+          "parsed": false,
+          "parse_error": "旧版二进制 Office 格式暂不自动解析，请打开官方附件核实"
+        },
+        {
+          "name": "齐鲁工业大学（山东省科学院）2026年公开招聘报名登记表.docx",
+          "url": "https://rsc.qlu.edu.cn/_upload/article/files/13/db/42a2e33449b483d814cd1ee87922/297088d1-36fd-46e0-904d-a03ea418d9a1.docx",
+          "format": "docx",
+          "parsed": true,
+          "parse_error": null
+        },
+        {
+          "name": "承诺书.docx",
+          "url": "https://rsc.qlu.edu.cn/_upload/article/files/13/db/42a2e33449b483d814cd1ee87922/d5e49242-9b15-4a9c-9476-58325fb17983.docx",
+          "format": "docx",
+          "parsed": true,
+          "parse_error": null
+        },
+        {
+          "name": "报名人员个人信息汇总表.xlsx",
+          "url": "https://rsc.qlu.edu.cn/_upload/article/files/13/db/42a2e33449b483d814cd1ee87922/4df489ba-cf5c-4857-bb02-a957a05b0945.xlsx",
+          "format": "xlsx",
+          "parsed": true,
+          "parse_error": null
+        },
+        {
+          "name": "证明材料模板.doc",
+          "url": "https://rsc.qlu.edu.cn/_upload/article/files/13/db/42a2e33449b483d814cd1ee87922/5390de3f-ce4d-4853-9ede-ba39ab5924c5.doc",
+          "format": "doc",
+          "parsed": false,
+          "parse_error": "旧版二进制 Office 格式暂不自动解析，请打开官方附件核实"
+        }
+      ],
+      "evidence": {
+        "education": "学历学位作为条件应聘",
+        "degree": "学位授权一级学科、 1 个博士专业学位授权类别 、 18 个硕士"
+      },
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 10,
+        "reasons": [
+          "公告明确提及博士后",
+          "匹配优先专业：分子生物学、药理学"
+        ],
+        "specialties": [
+          "分子生物学",
+          "药理学"
+        ],
+        "restrictions": [],
+        "is_postdoc": true
+      },
+      "phd": true,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "955436c84d49be6d1301"
+    },
+    {
+      "id": "4996b3ab1cdb35a77326",
+      "source": "山东师范大学人力资源处",
+      "source_aliases": [
+        "山东师范大学"
+      ],
+      "type": "高校",
+      "title": "招聘信息 查看更多",
+      "url": "https://rsc.sdnu.edu.cn/gkzp/zpxx.htm",
+      "published": null,
+      "published_evidence": null,
+      "application_start": null,
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "未核实",
+      "degree": "未核实",
+      "specialties": [],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {},
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "非目标岗位",
+        "score": 0,
+        "reasons": [
+          "未识别到博士或优先专业依据"
+        ],
+        "specialties": [],
+        "restrictions": [],
+        "is_postdoc": false
+      },
+      "phd": false,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:58:12+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": true,
+      "revisions": [],
+      "fingerprint": "97ad3c2be094f3b1e61f"
+    },
+    {
+      "id": "56048a9c06196c7939ca",
+      "source": "山东第一医科大学人事部",
+      "source_aliases": [
+        "山东第一医科大学",
+        "山东省医学科学院",
+        "山东第一医科大学第二附属医院"
+      ],
+      "type": "高校",
+      "title": "山东第一医科大学附属皮肤病医院2026年公开招聘高级专业技术岗位及博士研究生工作人员公告",
+      "url": "https://personnel.sdfmu.edu.cn/info/1026/6471.htm",
+      "published": null,
+      "published_evidence": null,
+      "application_start": "2026-09-14",
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "和学位证书、学信网查询的学历、学位认证报告",
+      "degree": "办批准的皮肤性病学博硕士研究生培养单位和国家卫生行政部门批准",
+      "specialties": [],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {
+        "application_start": "报名时间：2026年9月14日",
+        "education": "学历和学位证书、学信网查询的学历、学位认证报告",
+        "degree": "学位办批准的皮肤性病学博硕士研究生培养单位和国家卫生行政部门批准"
+      },
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 7,
+        "reasons": [
+          "公告明确提及博士后"
+        ],
+        "specialties": [],
+        "restrictions": [],
+        "is_postdoc": true
+      },
+      "phd": true,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:12:28+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": false,
+      "revisions": [
+        {
+          "observed_at": "2026-10-08T10:58:12+08:00",
+          "previous_fingerprint": "70ab1b06bcf7200f9d32",
+          "summary": "公告结构化字段发生变化，请核对官方原文"
+        }
+      ],
+      "fingerprint": "4e749ed49cc81e5a5a2d"
+    },
+    {
+      "id": "e146c3cc5cc024fb9347",
+      "source": "山东第一医科大学人事部",
+      "source_aliases": [
+        "山东第一医科大学",
+        "山东省医学科学院",
+        "山东第一医科大学第二附属医院"
+      ],
+      "type": "高校",
+      "title": "山东第一医科大学第二附属医院2026年公开招聘第二批高级专业技术岗位工作人员公告",
+      "url": "https://personnel.sdfmu.edu.cn/info/1026/6371.htm",
+      "published": null,
+      "published_evidence": null,
+      "application_start": null,
+      "deadline": "2026-11-30",
+      "deadline_status": "从官方公告正文提取，需核对原文",
+      "deadline_reliable": true,
+      "education": "和学位证书、学信网学历学位认证报告、高级专业技术职称证书、执",
+      "degree": "授权点35个",
+      "specialties": [],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {
+        "deadline": "报名时间：自公告发布之日起至2026年11月30日",
+        "education": "学历和学位证书、学信网学历学位认证报告、高级专业技术职称证书、执",
+        "degree": "学位授权点35个"
+      },
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 6,
+        "reasons": [
+          "公告明确提及博士或高层次人才"
+        ],
+        "specialties": [],
+        "restrictions": [],
+        "is_postdoc": false
+      },
+      "phd": true,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:12:28+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": false,
+      "revisions": [
+        {
+          "observed_at": "2026-10-08T10:58:12+08:00",
+          "previous_fingerprint": "1d782990b9f4dae9a568",
+          "summary": "公告结构化字段发生变化，请核对官方原文"
+        }
+      ],
+      "fingerprint": "5c1fcb7c2469ac41ae3d"
+    },
+    {
+      "id": "95f5391b1ea695aee5b5",
+      "source": "山东第一医科大学人事部",
+      "source_aliases": [
+        "山东第一医科大学",
+        "山东省医学科学院",
+        "山东第一医科大学第二附属医院"
+      ],
+      "type": "高校",
+      "title": "山东第一医科大学附属职业病医院(山东省职业病医院)2026年度公开招聘高级专业技术岗位工作人员公告",
+      "url": "https://personnel.sdfmu.edu.cn/info/1026/6361.htm",
+      "published": null,
+      "published_evidence": null,
+      "application_start": "2026-08-18",
+      "deadline": "2026-08-26",
+      "deadline_status": "从官方公告正文提取，需核对原文",
+      "deadline_reliable": true,
+      "education": "和学位证书",
+      "degree": "证书",
+      "specialties": [],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {
+        "application_start": "报名时间：2026年8月18日",
+        "deadline": "报名时间：2026年8月18日至2026年8月26日",
+        "education": "学历和学位证书",
+        "degree": "学位证书"
+      },
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "非目标岗位",
+        "score": 0,
+        "reasons": [
+          "未识别到博士或优先专业依据"
+        ],
+        "specialties": [],
+        "restrictions": [],
+        "is_postdoc": false
+      },
+      "phd": false,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:12:28+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": false,
+      "revisions": [
+        {
+          "observed_at": "2026-10-08T10:58:12+08:00",
+          "previous_fingerprint": "31ef28a5bca8b5ea72cb",
+          "summary": "公告结构化字段发生变化，请核对官方原文"
+        }
+      ],
+      "fingerprint": "1eddb6e774f0d1e5e59f"
+    },
+    {
+      "id": "ebb1ac26700a9cfc485c",
+      "source": "山东第一医科大学人事部",
+      "source_aliases": [
+        "山东第一医科大学",
+        "山东省医学科学院",
+        "山东第一医科大学第二附属医院"
+      ],
+      "type": "高校",
+      "title": "山东第一医科大学第二附属医院2026年公开招聘人员公告",
+      "url": "https://personnel.sdfmu.edu.cn/info/1026/6351.htm",
+      "published": null,
+      "published_evidence": null,
+      "application_start": "2026-08-15",
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "和学位证书、学信网学历学位认证报告",
+      "degree": "授权点35个",
+      "specialties": [],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {
+        "application_start": "报名时间： 2026年8月15日",
+        "education": "学历和学位证书、学信网学历学位认证报告",
+        "degree": "学位授权点35个"
+      },
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "非目标岗位",
+        "score": 0,
+        "reasons": [
+          "未识别到博士或优先专业依据"
+        ],
+        "specialties": [],
+        "restrictions": [],
+        "is_postdoc": false
+      },
+      "phd": false,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:12:28+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": false,
+      "revisions": [
+        {
+          "observed_at": "2026-10-08T10:58:12+08:00",
+          "previous_fingerprint": "20b7ec6d8dc9dd4a015e",
+          "summary": "公告结构化字段发生变化，请核对官方原文"
+        }
+      ],
+      "fingerprint": "18b8a679509901723267"
+    },
+    {
+      "id": "cb9d73ad8a47cbb18852",
+      "source": "山东第一医科大学人事部",
+      "source_aliases": [
+        "山东第一医科大学",
+        "山东省医学科学院",
+        "山东第一医科大学第二附属医院"
+      ],
+      "type": "高校",
+      "title": "山东省寄生虫病防治研究所2026年公开招聘人员公告",
+      "url": "https://personnel.sdfmu.edu.cn/info/1026/6341.htm",
+      "published": null,
+      "published_evidence": null,
+      "application_start": "2026-08-07",
+      "deadline": null,
+      "deadline_status": "未核实",
+      "deadline_reliable": false,
+      "education": "和学位证书、以及学历和学位认证报告（学信网查询下载）、专业技",
+      "degree": "证书、以及学历和学位认证报告（学信网查询下载）、专业技术职务",
+      "specialties": [],
+      "recruitment_count": "未核实",
+      "location": "未核实",
+      "attachments": [],
+      "evidence": {
+        "application_start": "报名时间： 2026年8月7日",
+        "education": "学历和学位证书、以及学历和学位认证报告（学信网查询下载）、专业技",
+        "degree": "学位证书、以及学历和学位认证报告（学信网查询下载）、专业技术职务"
+      },
+      "collected_at": "2026-10-08T10:58:12+08:00",
+      "phd_relevance": {
+        "category": "博士岗位",
+        "score": 7,
+        "reasons": [
+          "公告明确提及博士后"
+        ],
+        "specialties": [],
+        "restrictions": [],
+        "is_postdoc": true
+      },
+      "phd": true,
+      "restrictions": [],
+      "excluded": false,
+      "excluded_reason": null,
+      "first_seen": "2026-10-08T10:12:28+08:00",
+      "last_seen": "2026-10-08T10:58:12+08:00",
+      "is_newly_discovered": false,
+      "revisions": [
+        {
+          "observed_at": "2026-10-08T10:58:12+08:00",
+          "previous_fingerprint": "344f017f92a6b24d2385",
+          "summary": "公告结构化字段发生变化，请核对官方原文"
+        }
+      ],
+      "fingerprint": "4505cf73f3b6b1dbea18"
+    }
+  ],
+  "disclaimer": "公告索引仅供参考；是否招聘、报名期限、学历专业和执业资格要求以官方原文与附件为准。未识别字段均为未核实。"
+}
