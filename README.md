@@ -20,16 +20,18 @@
 
 | 来源 | 官方招聘栏目 | 采集方式 | 2026-10-08 云端抽样 |
 | --- | --- | --- | --- |
-| 山东大学人才招聘网 | <https://rsrczp.sdu.edu.cn/> | HTML 列表、详情及附件 | GitHub Actions 证书主机名校验失败，替代栏目核验中 |
-| 山东第一医科大学人事部 | <https://personnel.sdfmu.edu.cn/> | HTML 列表、详情及附件 | 成功，识别 6 条目标公告 |
+| 山东大学人才招聘网 | <https://rsrczp.sdu.edu.cn/> | HTML 列表、详情及附件 | 失败，GitHub Actions 证书主机名校验失败 |
+| 山东第一医科大学人事部 | <https://personnel.sdfmu.edu.cn/> | HTML 列表、详情及附件 | 成功，识别 5 条目标公告 |
 | 山东大学齐鲁医院 | <https://www.qiluhospital.com/list-313-2.html> | HTML 列表、详情及附件 | 失败，官方站返回 HTTP 420 |
 | 山东省立医院 | <https://www.sph.com.cn/Html/News/Columns/124/Index.html> | HTML 列表、详情及附件 | 成功，严格过滤后识别 1 条目标公告 |
 | 山东第一医科大学附属肿瘤医院 | <https://www.sd-cancer.com/tender_sub/> | HTML 列表、详情及附件 | 成功，识别 13 条目标公告 |
 | 济南大学人力资源处 | <https://rsc.ujn.edu.cn/rczp.htm> | HTML 列表、详情及附件 | 成功，识别 1 条目标公告 |
-| 齐鲁工业大学人事处 | <https://rsc.qlu.edu.cn/575/list.htm> | HTML 列表、详情及附件 | 招聘列表核验成功，完整采集复核中 |
-| 山东师范大学人力资源处 | <https://rsc.sdnu.edu.cn/gkzp.htm> | HTML 列表、详情及附件 | 公开招聘栏目核验成功，完整采集复核中 |
+| 齐鲁工业大学人事处 | <https://rsc.qlu.edu.cn/575/list.htm> | HTML 列表、详情及附件 | 成功，识别 1 条目标公告 |
+| 山东师范大学人力资源处 | <https://rsc.sdnu.edu.cn/gkzp.htm> | HTML 列表、详情及附件 | 成功，识别 1 条目标公告 |
 
 这里的数量是当次列表提取结果，不等于当前仍在报名的岗位数量。齐鲁医院的 420 不会被绕过；在找到并验证官方替代栏目之前继续保留失败状态。
+
+2026-10-08 最终分支采集验证：8 个生产来源中 6 个成功；去重后保留 25 条历史记录，其中 22 条为未排除的真实招聘公告，规则识别博士岗位 17 条。数据不会在功能分支写回正式 jobs.json；合并后由 main 上的计划或手动工作流更新生产数据。
 
 第一批 6 个医院候选官网中只有山东第一医科大学附属肿瘤医院通过三项检查。第二、三批高校与政府渠道核验后，济南大学、齐鲁工业大学和山东师范大学具有具体招聘栏目。失败与待确认结果分别保存在 [医院候选记录](scripts/source_candidates_hospitals.json)、[高校候选记录](scripts/source_candidates_universities.json) 和 [剩余渠道](scripts/source_candidates_batch3.json)，不会参与生产采集。
 

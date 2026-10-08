@@ -126,6 +126,7 @@ class CollectTests(unittest.TestCase):
     def test_docx_and_xlsx_attachments_are_parsed(self):
         from docx import Document
         from openpyxl import Workbook
+        from pypdf import PdfWriter
 
         doc = Document()
         doc.add_paragraph("博士岗位 基础医学")
@@ -143,6 +144,14 @@ class CollectTests(unittest.TestCase):
         text, error = extract_attachment_text(xlsx_buffer.getvalue(), "岗位表.xlsx")
         self.assertIsNone(error)
         self.assertIn("药理学", text)
+
+        pdf = PdfWriter()
+        pdf.add_blank_page(width=100, height=100)
+        pdf_buffer = io.BytesIO()
+        pdf.write(pdf_buffer)
+        text, error = extract_attachment_text(pdf_buffer.getvalue(), "岗位说明.pdf")
+        self.assertIsNone(error)
+        self.assertEqual(text, "")
 
     def test_merge_tracks_revision_and_preserves_verified_deadline(self):
         current = {

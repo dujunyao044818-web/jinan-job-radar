@@ -144,16 +144,6 @@ jobs:
           path: site/data/jobs.json
           if-no-files-found: error
 
-      - name: Save final branch collection evidence
-        if: github.event_name == 'push'
-        run: |
-          cp site/data/jobs.json collection-validation.json
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add collection-validation.json
-          git commit -m "Record final collection validation"
-          git push
-
 
       - name: Save recruitment results on main
         if: github.ref_name == github.event.repository.default_branch
