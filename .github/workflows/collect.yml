@@ -1,10 +1,22 @@
-
-name: Collect official job notices
+name: Test, collect and publish job radar
 
 on:
   workflow_dispatch:
+    inputs:
+      source_audit:
+        description: "只核验候选官方来源（不采集、不部署）"
+        required: false
+        default: false
+        type: boolean
   schedule:
     - cron: "25 1 * * *"
+  pull_request:
+    paths:
+      - ".github/workflows/collect.yml"
+      - "requirements.txt"
+      - "scripts/**"
+      - "site/**"
+      - "tests/**"
 
 permissions:
   contents: write
@@ -12,13 +24,12 @@ permissions:
   id-token: write
 
 concurrency:
-  group: jinan-job-radar
+  group: jinan-job-radar-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  collect-and-deploy:
+  test:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -32,10 +43,98 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Collect recruitment notices
+      - name: Run Python tests
+        run: python -B -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run frontend tests
+        run: node --test tests/frontend.test.mjs
+
+      - name: Validate source configuration
+        run: |
+          python -m json.tool scripts/sources.json >/dev/null
+          python -m json.tool scripts/source_candidates.json >/dev/null
+
+  source-audit:
+    if: github.event_name == 'workflow_dispatch' && inputs.source_audit
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Audit candidate official sites
+        run: python scripts/audit_sources.py --output source-audit.json
+
+      - name: Upload audit evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-audit-${{ github.run_id }}
+          path: source-audit.json
+          if-no-files-found: error
+
+  collect:
+    if: github.event_name != 'pull_request' && !(github.event_name == 'workflow_dispatch' && inputs.source_audit)
+    needs: test
+    runs-on: ubuntu-latest
+    outputs:
+      result: ${{ steps.collect.outcome }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Collect official recruitment notices
+        id: collect
+        continue-on-error: true
         run: python scripts/collect.py
 
-      - name: Save recruitment results
+      - name: Validate generated JSON
+        run: |
+          python -m json.tool site/data/jobs.json >/dev/null
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("site/data/jobs.json").read_text(encoding="utf-8"))
+          assert data.get("schema_version") == 2
+          assert isinstance(data.get("jobs"), list)
+          assert isinstance(data.get("sources"), list)
+          assert data.get("collection_status") in {"ok", "partial", "failed"}
+          PY
+
+      - name: Upload branch collection evidence
+        if: github.ref_name != github.event.repository.default_branch
+        uses: actions/upload-artifact@v4
+        with:
+          name: collection-${{ github.run_id }}
+          path: site/data/jobs.json
+          if-no-files-found: error
+
+      - name: Save recruitment results on main
+        if: github.ref_name == github.event.repository.default_branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -45,14 +144,34 @@ jobs:
             git push
           fi
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload website
+      - name: Upload website for Pages
+        if: github.ref_name == github.event.repository.default_branch
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
-      - name: Deploy website
+  deploy:
+    if: github.ref_name == github.event.repository.default_branch && !(github.event_name == 'workflow_dispatch' && inputs.source_audit)
+    needs: collect
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  collection-health:
+    if: always() && needs.collect.result != 'skipped'
+    needs: [collect, deploy]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Report complete collection failure
+        if: needs.collect.outputs.result == 'failure'
+        run: |
+          echo "::error::All official sources failed. Historical data and source errors were preserved and published."
+          exit 1
+      - name: Confirm collection completed
+        if: needs.collect.outputs.result != 'failure'
+        run: echo "At least one official source completed successfully."

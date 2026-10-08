@@ -1,37 +1,71 @@
 # 济南博士招聘雷达
 
-零 AI API 调用的济南高校/医院官方招聘索引。**当前是可运行首版，不是所有济南单位的完整覆盖。**
+济南医院、高校与科研机构官方招聘公告索引，重点服务医学博士毕业生。项目使用规则解析与免费开源库，不调用 AI API，也不保存报名者信息。
 
-## 功能
-- 4个已确认的官网列表页；可在 `scripts/sources.json` 增加新的**经核验且允许访问**的信息源
-- 官方公告标题、来源、发布日期（能从列表项识别时）、原文链接
-- 标题级博士相关筛选（非岗位资格审核）、搜索、排序、去重、历史公告
-- 每天北京时间约09:25计划采集（GitHub 计划任务可能延迟）
-- 手动一键触发：网页「启动新一轮官网检测」→ Actions → `Run workflow`（需要仓库写入权限）
-- 网页「刷新已采集结果」只重新读取已经发布的数据；不会启动后台爬虫
-- 保留站点失败状态；失败不被标为无招聘
+线上地址：<https://dujunyao044818-web.github.io/jinan-job-radar/>
 
-## 部署（新建 public 仓库，默认 main 分支）
-1. GitHub 创建公开仓库，例如 `jinan-job-radar`。
-2. 将本压缩包**内容**放到仓库根目录（包含隐藏的 `.github/` 文件夹），提交到 `main`。
-3. 在 `Settings → Pages → Build and deployment → Source` 选择 **GitHub Actions**。
-4. `Actions → Collect official job notices → Run workflow` 首次手动采集。完成后 bot 会将 `site/data/jobs.json` 更新并提交回 `main`，然后通过 `workflow_run` 触发发布。
-5. `Publish job radar` workflow 会从 `site/` 自动部署至 `https://用户名.github.io/jinan-job-radar/`。首次部署也可以手动执行。
-6. 想立即再扫一次：网页点「启动新一轮官网检测」，在 GitHub Actions 中点 `Run workflow`；完成后返回网页点「刷新已采集结果」。
+## 能做什么
 
-## 本地运行
-```bash
-python -m pip install -r requirements.txt
-python scripts/collect.py
-python -m http.server 8000 --directory site
-```
-浏览器打开 http://localhost:8000。
+- 读取经核验的官方招聘栏目，解析公告正文与 PDF、DOCX、XLSX 附件。
+- 提取发布日期、报名起止日期、学历、学位、专业、人数、工作地点和官方附件链接；没有依据的字段显示“未核实”。
+- 使用可解释规则区分“博士岗位、可能符合专业、需要人工核实、非目标岗位”，并单列博士后。
+- 标注医师资格证、住院医师规范化培训、临床执业资格和特定职称限制。
+- 支持关键词、单位类型、来源、专业、发布日期、截止日期、最近新增、即将截止、历史公告和浏览器本地收藏。
+- 单个来源失败时保留历史公告和最近成功时间，失败数量显示为未知，不会显示成“0 条招聘”。
+- 用规范化 URL 去重；结构化字段变化时保留最多 10 次修订记录。
 
-## 数据质量与限制
-- 不是全文解析；截止日期仅在公告正文符合严格日期模式时提取，否则为**未核实**，不能因为没有截止日期就推断仍开放报名。
-- 当前只从公开列表页提取；有些网站使用验证码、JS或反爬措施，可能解析失败。每站状态会显示失败，不会虚构结果。
-- 不绕过验证码、身份验证或访问限制。严守网站规则，必要时使用官方RSS/接口或人工录入。
-- 博士筛选只基于标题关键词；招聘附件内隐藏的博士岗位可能漏检，且带博士字样不保证适合。
-- 招聘信息仅做索引，请核对原文、附件、报名入口。数据时间按北京时间展示。
-- 如需新增单位，必须核实具体招聘栏目链接，**不能单凭主页搜索关键词当成覆盖成功**。
-- 免费服务额度及政策以 GitHub 官方实时说明为准。
+规则评分只是检索辅助。基础医学博士不会因为专业名称匹配而自动判定符合临床医师岗位，最终条件必须核对官方原文及附件。
+
+## 已投入生产的官方来源
+
+| 来源 | 官方招聘栏目 | 采集方式 | 2026-10-08 云端抽样 |
+| --- | --- | --- | --- |
+| 山东大学人才招聘网 | <https://rsrczp.sdu.edu.cn/> | HTML 列表、详情及附件 | 成功，识别 11 条目标公告 |
+| 山东第一医科大学人事部 | <https://personnel.sdfmu.edu.cn/> | HTML 列表、详情及附件 | 成功，识别 6 条目标公告 |
+| 山东大学齐鲁医院 | <https://www.qiluhospital.com/list-313-2.html> | HTML 列表、详情及附件 | 失败，官方站返回 HTTP 420 |
+| 山东省立医院 | <https://www.sph.com.cn/Html/News/Columns/124/Index.html> | HTML 列表、详情及附件 | 成功，严格过滤后识别 1 条目标公告 |
+
+这里的数量是当次列表提取结果，不等于当前仍在报名的岗位数量。齐鲁医院的 420 不会被绕过；在找到并验证官方替代栏目之前继续保留失败状态。
+
+第一批 6 个医院候选官网单独存放在 [scripts/source_candidates.json](scripts/source_candidates.json)，不会参与生产采集。只有 Actions 的来源核验同时确认单位身份、具体招聘栏目和真实招聘条目后，才能移入 [scripts/sources.json](scripts/sources.json)。这避免把官网首页可访问误报成招聘采集成功。
+
+## 本地开发
+
+推荐 Python 3.11：
+
+    python -m venv .venv
+    .venv/bin/python -m pip install -r requirements.txt
+    .venv/bin/python -B -m unittest discover -s tests -p "test_*.py" -v
+    node --test tests/frontend.test.mjs
+    python -m http.server 8000 --directory site
+
+采集会更新 site/data/jobs.json：
+
+    python scripts/collect.py
+
+遇到代理或站点限制时，不要关闭 TLS 校验、伪造成功状态或用测试数据覆盖正式数据。使用单元测试中的模拟响应验证解析逻辑，并在 GitHub Actions 托管运行器上完成真实采集验证。
+
+## 自动采集与部署
+
+[collect.yml](.github/workflows/collect.yml) 每天 UTC 01:25（北京时间约 09:25）运行，也支持手动启动。
+
+- 所有运行先执行 Python 和前端测试。
+- Pull Request 只测试，不采集、不提交数据、不部署。
+- 功能分支手动运行会生成真实采集 JSON artifact，不写回仓库、不部署。
+- main 上的计划或手动运行会保存 site/data/jobs.json 并部署 GitHub Pages。
+- 即使所有来源都失败，错误状态与历史公告仍会生成并发布，最后的健康检查会把工作流标红。
+- 手动勾选 source_audit 时，只核验候选来源并上传证据 artifact。
+
+网页“刷新已发布数据”只重新读取 Pages 上的 JSON；“前往 Actions 启动采集”链接固定指向 collect.yml。
+
+## 数据真实性
+
+生产数据和测试数据严格隔离。测试用例只使用 jobs.example.org 模拟响应和内存生成的 Office 文件。采集器：
+
+- 不绕过验证码、登录、HTTP 420 或其他访问限制；
+- 使用系统或 REQUESTS_CA_BUNDLE 指定的可信 CA，不关闭证书校验；
+- 对 429 和服务端临时错误有限重试，并设置连接、读取超时和站点间延迟；
+- 限制附件为 12 MB、每个来源每轮最多解析指定数量的详情；
+- 对旧版 DOC/XLS、损坏或受密码保护的附件保留官方链接并标明未解析。
+
+数据字段与来源维护流程见 [MAINTENANCE.md](MAINTENANCE.md)。

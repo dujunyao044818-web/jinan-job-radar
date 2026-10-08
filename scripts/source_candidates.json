@@ -1,0 +1,38 @@
+[
+  {
+    "name": "山东大学齐鲁第二医院",
+    "aliases": ["山东大学齐鲁第二医院", "齐鲁第二医院", "山大二院"],
+    "type": "医院",
+    "website": "https://www.qlhospital.com/"
+  },
+  {
+    "name": "山东第一医科大学第一附属医院（山东省千佛山医院）",
+    "aliases": ["山东第一医科大学第一附属医院", "山东省千佛山医院", "千佛山医院"],
+    "type": "医院",
+    "website": "https://www.sdhospital.com.cn/"
+  },
+  {
+    "name": "济南市中心医院",
+    "aliases": ["济南市中心医院"],
+    "type": "医院",
+    "website": "https://www.zxyy.cn/"
+  },
+  {
+    "name": "济南市儿童医院",
+    "aliases": ["济南市儿童医院", "山东大学附属儿童医院"],
+    "type": "医院",
+    "website": "https://www.etyy.com/"
+  },
+  {
+    "name": "山东省肿瘤医院",
+    "aliases": ["山东省肿瘤医院", "山东省肿瘤防治研究院"],
+    "type": "医院",
+    "website": "https://www.sd-cancer.com/"
+  },
+  {
+    "name": "山东中医药大学附属医院",
+    "aliases": ["山东中医药大学附属医院", "山东省中医院"],
+    "type": "医院",
+    "website": "https://www.sdzydfy.com/"
+  }
+]
