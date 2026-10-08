@@ -1,0 +1,26 @@
+[
+  {
+    "name": "山东大学官网",
+    "aliases": ["山东大学"],
+    "type": "高校",
+    "website": "https://www.sdu.edu.cn/"
+  },
+  {
+    "name": "山东中医药大学官网",
+    "aliases": ["山东中医药大学"],
+    "type": "高校",
+    "website": "https://www.sdutcm.edu.cn/"
+  },
+  {
+    "name": "山东省人力资源和社会保障厅",
+    "aliases": ["山东省人力资源和社会保障厅"],
+    "type": "政府渠道",
+    "website": "https://hrss.shandong.gov.cn/"
+  },
+  {
+    "name": "济南市人力资源和社会保障局",
+    "aliases": ["济南市人力资源和社会保障局"],
+    "type": "政府渠道",
+    "website": "https://jnhrss.jinan.gov.cn/"
+  }
+]

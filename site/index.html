@@ -1,28 +1,67 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>济南博士招聘雷达 · 官方公告监测</title><meta name="description" content="济南医院与高校官方招聘公告监测、筛选、去重、排序与原文链接">
-<style>
-:root{font-family:system-ui,-apple-system,'Microsoft YaHei',sans-serif;color:#17283b;background:#f5f7fb}*{box-sizing:border-box}body{margin:0}a{color:#1469c3}button,select,input{font:inherit}button{cursor:pointer}.wrap{max-width:1140px;margin:0 auto;padding:28px 20px 70px}.hero{background:linear-gradient(110deg,#10385d,#156a88);color:white;padding:38px;border-radius:24px}.hero h1{font-size:32px;margin:12px 0 8px}.hero p{color:#cce7f0;margin:0}.eyebrow{letter-spacing:.17em;font-size:11px;font-weight:700;color:#b5e3ee}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.btn{border:1px solid #d1deeb;background:#fff;color:#153b60;padding:10px 16px;border-radius:11px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:6px}.btn.main{background:#54d4c1;color:#073c41;border-color:#54d4c1}.btn:hover{filter:brightness(.96)}.hint{color:#d7e6f1;font-size:12px;margin-top:13px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:20px 0}.metric,.panel,.job{background:white;border:1px solid #e4eaf1;border-radius:16px}.metric{padding:20px}.metric strong{display:block;font-size:28px}.metric span{color:#63788d;font-size:12px}.panel{padding:20px;margin-top:16px}.panel h2{font-size:18px;margin:0 0 18px}.filters{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:12px}.field label{display:block;font-size:12px;font-weight:700;color:#52687f;margin-bottom:6px}input,select{width:100%;min-height:42px;border:1px solid #d7e0e9;border-radius:10px;background:#fff;padding:9px 11px;color:#253d55}.checkrow{display:flex;gap:18px;margin-top:18px;flex-wrap:wrap;font-size:14px}.checkrow label{display:flex;align-items:center;gap:7px}.checkrow input{width:auto;min-height:0}.resulthead{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:23px 0 12px}.resulthead h2{font-size:19px;margin:0}.resulthead span{font-size:12px;color:#6c7e91}.job{padding:20px;margin-bottom:12px}.jobtop{display:flex;align-items:flex-start;justify-content:space-between;gap:15px}.job h3{font-size:17px;margin:0 0 9px;line-height:1.5}.sub{color:#607388;font-size:13px;display:flex;flex-wrap:wrap;gap:14px}.pill{border-radius:100px;padding:5px 10px;background:#e9f3fe;color:#175c92;font-size:12px;font-weight:700;white-space:nowrap}.pill.phd{background:#e5f8f1;color:#11785f}.jobfoot{margin-top:15px;display:flex;justify-content:space-between;align-items:center;gap:10px}.small{font-size:12px;color:#8290a0}.sourcegrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.source{padding:13px;border-radius:11px;background:#f6f8fa;display:flex;justify-content:space-between;gap:8px;font-size:13px}.source a{text-decoration:none}.status{font-size:12px;font-weight:700;color:#14816b}.status.error{color:#b64a3b}.notice{background:#fff9e7;border:1px solid #eee1aa;border-radius:12px;color:#7b621b;padding:14px;font-size:13px;line-height:1.7;margin:15px 0}.empty{text-align:center;padding:50px;color:#76879a}.footer{font-size:12px;color:#6f8193;line-height:1.7;margin-top:20px}@media(max-width:740px){.hero{padding:26px}.hero h1{font-size:25px}.metrics{grid-template-columns:repeat(2,1fr)}.filters{grid-template-columns:1fr 1fr}.field.search{grid-column:span 2}.sourcegrid{grid-template-columns:1fr}}@media(max-width:450px){.filters{grid-template-columns:1fr}.field.search{grid-column:auto}.jobtop{flex-direction:column}.jobfoot{align-items:flex-start;flex-direction:column}}
-</style></head><body><main class="wrap"><header class="hero"><div class="eyebrow">JINAN · JOB RADAR</div><h1>济南博士招聘雷达</h1><p>聚合医院与高校招聘公告 · 优先关注博士及科研岗位</p><div class="actions"><button class="btn main" id="refresh">↻ 刷新已采集结果</button><a class="btn" id="run" target="_blank" rel="noopener noreferrer" href="#">▶ 启动新一轮官网检测 ↗</a></div><div class="hint">新一轮检测需要在 GitHub Actions 页面点击 Run workflow；此网页不直接执行爬虫。<span id="refreshed"></span></div></header>
-<section class="metrics"><div class="metric"><strong id="m-total">—</strong><span>已收录公告</span></div><div class="metric"><strong id="m-phd">—</strong><span>博士相关公告（标题识别）</span></div><div class="metric"><strong id="m-week">—</strong><span>最近7天发布</span></div><div class="metric"><strong id="m-source">—</strong><span>采集成功来源 / 总数</span></div></section>
-<section class="panel"><h2>检索与筛选</h2><div class="filters"><div class="field search"><label for="q">关键词</label><input id="q" placeholder="如：检验、药理学、博士后、齐鲁"></div><div class="field"><label for="type">单位类型</label><select id="type"><option value="">全部</option><option>医院</option><option>高校</option></select></div><div class="field"><label for="source">招聘单位</label><select id="source"><option value="">全部官方来源</option></select></div><div class="field"><label for="sort">排序规则</label><select id="sort"><option value="date">发布日期：最新</option><option value="deadline">截止日期：最近</option><option value="first">首次发现：最新</option><option value="title">标题：拼音/字典序</option></select></div></div><div class="checkrow"><label><input type="checkbox" id="phd" checked>优先仅看博士相关</label><label><input type="checkbox" id="recent">只看最近30天发布</label><label><input type="checkbox" id="deadline">仅看已识别截止日期</label></div></section>
-<div class="notice" id="notice">正在读取公告数据……</div><div class="resulthead"><h2>招聘公告</h2><span id="count">等待数据</span></div><div id="list" aria-live="polite"></div><button class="btn" id="more" style="display:none;width:100%;justify-content:center">加载更多</button>
-<section class="panel"><h2>官方来源 · 采集状态</h2><div class="sourcegrid" id="sources"></div></section><div class="footer">数据为官方公告目录索引，不等于仍在招聘；博士识别仅依据标题关键词，不代表专业、学历和个人条件完全匹配。报名截止时间缺失时显示“未核实”，不要据此判断尚可报名。任何公告请打开原文核实附件、报名要求及截止日期。<br>开源部署 · GitHub Pages + Actions · 无需 AI API</div></main>
-<script>
-'use strict';
-const $=id=>document.getElementById(id);let data={jobs:[],sources:[],updated_at:null},shown=0,filtered=[];
-const fmt=s=>s?String(s).slice(0,10):'未核实';const e=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
-function link(url,text){const a=e('a','',text);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;}
-function dateSort(a,b){return (b||'').localeCompare(a||'');}
-function render(){const q=$('q').value.trim().toLowerCase(),type=$('type').value,source=$('source').value,now=Date.now();filtered=data.jobs.filter(j=>(!q||(j.title+' '+j.source).toLowerCase().includes(q))&&(!type||j.type===type)&&(!source||j.source===source)&&(!$('phd').checked||j.phd)&&(!$('deadline').checked||j.deadline)&&(!$('recent').checked||(j.published&&now-new Date(j.published+'T00:00:00+08:00').getTime()<=30*86400000&&now-new Date(j.published+'T00:00:00+08:00').getTime()>=0)));
-const sort=$('sort').value;filtered.sort((a,b)=>sort==='deadline'?(!a.deadline?1:!b.deadline?-1:a.deadline.localeCompare(b.deadline))||dateSort(a.published,b.published):sort==='first'?dateSort(a.first_seen,b.first_seen):sort==='title'?a.title.localeCompare(b.title,'zh'):dateSort(a.published,b.published));shown=0;$('list').replaceChildren();$('count').textContent=`符合条件 ${filtered.length} 条`;more();}
-function more(){const batch=filtered.slice(shown,shown+20);const frag=document.createDocumentFragment();for(const j of batch){const card=e('article','job');const top=e('div','jobtop');const left=e('div');left.append(e('h3','',j.title));const meta=e('div','sub');meta.append(e('span','',j.source),e('span','',`发布：${fmt(j.published)}`),e('span','',`截止：${fmt(j.deadline)}`));left.append(meta);top.append(left);if(j.phd)top.append(e('span','pill phd','博士相关'));else top.append(e('span','pill','普通公告'));card.append(top);const foot=e('div','jobfoot');foot.append(e('span','small',`首次发现：${fmt(j.first_seen)}`));foot.append(link(j.url,'查看官方原文 ↗'));card.append(foot);frag.append(card);} $('list').append(frag);shown+=batch.length;$('more').style.display=shown<filtered.length?'flex':'none';if(!filtered.length)$('list').append(e('div','empty','暂无匹配公告。请清除筛选条件，或检查采集状态。'));}
-function renderData(){const jobs=data.jobs||[];const ok=(data.sources||[]).filter(x=>x.status==='ok').length;$('m-total').textContent=jobs.length;$('m-phd').textContent=jobs.filter(j=>j.phd).length;$('m-week').textContent=jobs.filter(j=>j.published&&Date.now()-new Date(j.published+'T00:00:00+08:00').getTime()<7*86400000&&Date.now()>=new Date(j.published+'T00:00:00+08:00').getTime()).length;$('m-source').textContent=`${ok}/${data.sources.length}`;$('refreshed').textContent=data.updated_at?' · 最近数据更新：'+data.updated_at.replace('T',' '):'';
-const sel=$('source'),before=sel.value;sel.replaceChildren(new Option('全部官方来源',''));for(const src of data.sources)sel.add(new Option(src.name,src.name));sel.value=before;
-const box=$('sources');box.replaceChildren();for(const src of data.sources){const row=e('div','source'),status=e('span','status '+(src.status==='ok'?'':'error'),src.status==='ok'?`成功 · ${src.found}条`:'采集失败');row.append(link(src.url,src.name),status);if(src.status==='error'&&src.error)row.title=src.error;box.append(row);}
-$('notice').textContent=!data.updated_at?'尚未执行首次采集；请在 GitHub Actions 手动运行检测。':ok===0?'本轮全部采集失败，可能显示历史结果，请检查 Actions 日志。':ok<data.sources.length?`部分官方站点采集失败（${ok}/${data.sources.length}），失败站点可能显示旧数据。`:'已完成最近一次采集。公告是否有效、截止日期与报名要求仍需以官方原文为准。';render();}
-async function load(){try{const r=await fetch('./data/jobs.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);data=await r.json();renderData();}catch(err){$('notice').textContent='无法读取数据：'+err.message+'。请确认已部署 GitHub Pages。';}}
-$('refresh').onclick=load;$('more').onclick=more;['q','type','source','sort','phd','recent','deadline'].forEach(id=>$(id).addEventListener(['q'].includes(id)?'input':'change',render));
-const parts=location.hostname.match(/^([^.]+)\.github\.io$/),repo=location.pathname.split('/').filter(Boolean)[0];const action=parts&&repo?`https://github.com/${parts[1]}/${repo}/actions/workflows/update.yml`:'';const run=$('run');if(action)run.href=action;else{run.href='https://github.com/';run.title='请先部署到 GitHub Pages，或到仓库 Actions 页面手动运行 update.yml';}
-load();
-</script></body></html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="济南医院、高校与科研机构官方博士招聘公告监测">
+  <meta name="theme-color" content="#0d526d">
+  <title>济南博士招聘雷达 · 官方公告监测</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <div class="eyebrow">JINAN · MEDICAL TALENT RADAR</div>
+    <h1>济南博士招聘雷达</h1>
+    <p>追踪医院、高校与科研机构的官方招聘公告，优先呈现医学博士、科研与博士后岗位。</p>
+    <div class="actions">
+      <button class="btn primary" id="refresh" type="button">刷新已发布数据</button>
+      <a class="btn" id="run" target="_blank" rel="noopener noreferrer">前往 Actions 启动采集 ↗</a>
+    </div>
+    <p class="hero-note">刷新只重新读取 GitHub Pages 上的 JSON，不会启动采集。手动采集需在 Actions 中运行 <code>collect.yml</code>。</p>
+    <p class="updated" id="updated">正在读取最近一次采集记录……</p>
+  </header>
+
+  <section class="metrics" aria-label="数据概览">
+    <article class="metric"><strong id="m-total">—</strong><span>历史公告</span></article>
+    <article class="metric"><strong id="m-phd">—</strong><span>博士岗位</span></article>
+    <article class="metric"><strong id="m-new">—</strong><span>最近 7 天发布</span></article>
+    <article class="metric"><strong id="m-source">—</strong><span>本次来源成功率</span></article>
+  </section>
+
+  <section class="notice" id="notice" role="status">正在读取公告数据……</section>
+
+  <section class="panel filters-panel">
+    <div class="panel-heading">
+      <div><span class="section-kicker">FILTERS</span><h2>检索与筛选</h2></div>
+      <button class="text-button" id="reset" type="button">清除条件</button>
+    </div>
+    <div class="filters">
+      <label class="field search"><span>关键词</span><input id="q" type="search" placeholder="单位、岗位、药理学、检验、博士后"></label>
+      <label class="field"><span>单位类型</span><select id="type"><option value="">全部类型</option><option>医院</option><option>高校</option><option>科研机构</option></select></label>
+      <label class="field"><span>招聘单位</span><select id="source"><option value="">全部官方来源</option></select></label>
+      <label class="field"><span>岗位判断</span><select id="relevance"><option value="">全部判断</option><option>博士岗位</option><option>可能符合专业</option><option>需要人工核实</option><option>非目标岗位</option><option>博士后</option></select></label>
+      <label class="field"><span>优先专业</span><select id="specialty"><option value="">全部专业</option><option>基础医学</option><option>药理学</option><option>肾脏病学</option><option>临床检验诊断学</option><option>医学检验</option><option>生物医学</option><option>分子生物学</option></select></label>
+      <label class="field"><span>时间范围</span><select id="period"><option value="">全部历史</option><option value="7">最近 7 天发布</option><option value="30">最近 30 天发布</option><option value="discovered">本轮新发现</option><option value="closing">7 天内截止</option><option value="favorites">我的收藏</option></select></label>
+      <label class="field"><span>排序</span><select id="sort"><option value="published">发布日期：最新</option><option value="deadline">截止日期：最近</option><option value="first_seen">首次发现：最新</option><option value="score">匹配评分：最高</option><option value="title">标题：字典序</option></select></label>
+      <label class="field toggle"><input id="include-excluded" type="checkbox"><span>显示已排除的非招聘公告</span></label>
+    </div>
+  </section>
+
+  <div class="result-heading"><div><span class="section-kicker">OFFICIAL NOTICES</span><h2>招聘公告</h2></div><span id="count">等待数据</span></div>
+  <div id="list" aria-live="polite"></div>
+  <button class="btn load-more" id="more" type="button">加载更多</button>
+
+  <section class="panel">
+    <div class="panel-heading"><div><span class="section-kicker">SOURCE HEALTH</span><h2>官方来源与采集状态</h2></div><span class="muted">失败不等于没有招聘</span></div>
+    <div class="source-grid" id="sources"></div>
+  </section>
+
+  <footer>
+    本站只提供官方公告索引。未识别到截止日期不代表仍可报名；博士与专业匹配是可解释规则结果，不构成资格审核。临床岗位的医师资格、规培、执业证和职称要求必须打开原文及附件核实。
+  </footer>
+</main>
+<template id="empty-template"><div class="empty"><strong>没有匹配公告</strong><span>请调整筛选条件，或查看来源采集状态。</span></div></template>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

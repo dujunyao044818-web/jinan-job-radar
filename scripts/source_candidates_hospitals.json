@@ -1,0 +1,37 @@
+[
+  {
+    "name": "山东大学齐鲁第二医院",
+    "aliases": ["山东大学齐鲁第二医院", "齐鲁第二医院", "山大二院"],
+    "type": "医院",
+    "website": "https://www.qlhospital.com/",
+    "last_audit": "域名无法解析，尚未验证"
+  },
+  {
+    "name": "山东第一医科大学第一附属医院（山东省千佛山医院）",
+    "aliases": ["山东第一医科大学第一附属医院", "山东省千佛山医院", "千佛山医院"],
+    "type": "医院",
+    "website": "https://www.sdhospital.com.cn/",
+    "last_audit": "连接失败，尚未验证"
+  },
+  {
+    "name": "济南市中心医院",
+    "aliases": ["济南市中心医院"],
+    "type": "医院",
+    "website": "https://www.zxyy.cn/",
+    "last_audit": "连接失败，尚未验证"
+  },
+  {
+    "name": "济南市儿童医院",
+    "aliases": ["济南市儿童医院", "山东大学附属儿童医院"],
+    "type": "医院",
+    "website": "https://www.etyy.com/",
+    "last_audit": "HTTP 420，尚未验证"
+  },
+  {
+    "name": "山东中医药大学附属医院",
+    "aliases": ["山东中医药大学附属医院", "山东省中医院"],
+    "type": "医院",
+    "website": "https://www.sdzydfy.com/",
+    "last_audit": "官网身份已确认，未找到可验证招聘栏目"
+  }
+]

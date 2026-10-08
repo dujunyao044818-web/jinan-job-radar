@@ -1,6 +1,98 @@
 [
- {"name":"山东大学人才招聘网","type":"高校","url":"https://rsrczp.sdu.edu.cn/","domain":"rsrczp.sdu.edu.cn"},
- {"name":"山东第一医科大学人事部","type":"高校","url":"https://personnel.sdfmu.edu.cn/","domain":"personnel.sdfmu.edu.cn"},
- {"name":"山东大学齐鲁医院","type":"医院","url":"https://www.qiluhospital.com/list-313-2.html","domain":"www.qiluhospital.com"},
- {"name":"山东省立医院","type":"医院","url":"https://www.sph.com.cn/Html/News/Columns/124/Index.html","domain":"www.sph.com.cn"}
+  {
+    "name": "山东大学人才招聘网",
+    "aliases": ["山东大学", "山大"],
+    "type": "高校",
+    "website": "https://www.sdu.edu.cn/",
+    "url": "https://rsrczp.sdu.edu.cn/",
+    "domain": "rsrczp.sdu.edu.cn",
+    "method": "官方人才招聘网 HTML 列表与详情解析",
+    "verified_at": "2026-10-08",
+    "detail_limit": 12,
+    "enabled": true
+  },
+  {
+    "name": "山东第一医科大学人事部",
+    "aliases": ["山东第一医科大学", "山东省医学科学院", "山东第一医科大学第二附属医院"],
+    "type": "高校",
+    "website": "https://www.sdfmu.edu.cn/",
+    "url": "https://personnel.sdfmu.edu.cn/",
+    "domain": "personnel.sdfmu.edu.cn",
+    "method": "官方人事部招聘栏目 HTML 列表与详情解析",
+    "verified_at": "2026-10-08",
+    "detail_limit": 12,
+    "enabled": true
+  },
+  {
+    "name": "山东大学齐鲁医院",
+    "aliases": ["齐鲁医院", "山东大学齐鲁医院（济南）"],
+    "type": "医院",
+    "website": "https://www.qiluhospital.com/",
+    "url": "https://www.qiluhospital.com/list-313-2.html",
+    "domain": "www.qiluhospital.com",
+    "method": "官方人事招聘栏目 HTML 列表与详情解析；HTTP 420 时只记录失败，不绕过限制",
+    "verified_at": "2026-10-08",
+    "detail_limit": 10,
+    "enabled": true
+  },
+  {
+    "name": "山东省立医院",
+    "aliases": ["山东第一医科大学附属省立医院", "山东省立医院"],
+    "type": "医院",
+    "website": "https://www.sph.com.cn/",
+    "url": "https://www.sph.com.cn/Html/News/Columns/124/Index.html",
+    "domain": "www.sph.com.cn",
+    "method": "官方招聘公告栏目 HTML 列表与详情解析",
+    "verified_at": "2026-10-08",
+    "detail_limit": 12,
+    "enabled": true
+  },
+  {
+    "name": "山东第一医科大学附属肿瘤医院",
+    "aliases": ["山东省肿瘤医院", "山东省肿瘤防治研究院", "山东第一医科大学附属肿瘤医院"],
+    "type": "医院",
+    "website": "https://www.sd-cancer.com/",
+    "url": "https://www.sd-cancer.com/tender_sub/",
+    "domain": "www.sd-cancer.com",
+    "method": "官方人才招聘栏目 HTML 列表、详情及附件解析",
+    "verified_at": "2026-10-08",
+    "detail_limit": 12,
+    "enabled": true
+  },
+  {
+    "name": "济南大学人力资源处",
+    "aliases": ["济南大学"],
+    "type": "高校",
+    "website": "https://rsc.ujn.edu.cn/",
+    "url": "https://rsc.ujn.edu.cn/rczp.htm",
+    "domain": "rsc.ujn.edu.cn",
+    "method": "官方人才招聘栏目 HTML 列表、详情及附件解析",
+    "verified_at": "2026-10-08",
+    "detail_limit": 12,
+    "enabled": true
+  },
+  {
+    "name": "齐鲁工业大学人事处",
+    "aliases": ["齐鲁工业大学", "山东省科学院"],
+    "type": "高校",
+    "website": "https://rsc.qlu.edu.cn/",
+    "url": "https://rsc.qlu.edu.cn/575/list.htm",
+    "domain": "rsc.qlu.edu.cn",
+    "method": "官方招聘栏目 HTML 列表、详情及附件解析",
+    "verified_at": "2026-10-08",
+    "detail_limit": 12,
+    "enabled": true
+  },
+  {
+    "name": "山东师范大学人力资源处",
+    "aliases": ["山东师范大学"],
+    "type": "高校",
+    "website": "https://rsc.sdnu.edu.cn/",
+    "url": "https://rsc.sdnu.edu.cn/gkzp.htm",
+    "domain": "rsc.sdnu.edu.cn",
+    "method": "官方公开招聘栏目 HTML 列表、详情及附件解析",
+    "verified_at": "2026-10-08",
+    "detail_limit": 12,
+    "enabled": true
+  }
 ]
