@@ -95,6 +95,15 @@ jobs:
           path: source-audit.json
           if-no-files-found: error
 
+      - name: Save branch audit evidence
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add source-audit.json
+          git commit -m "Record source audit evidence"
+          git push
+
   collect:
     if: github.event_name != 'pull_request' && !(github.event_name == 'workflow_dispatch' && inputs.source_audit)
     needs: test
