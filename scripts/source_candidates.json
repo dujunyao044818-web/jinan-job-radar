@@ -24,12 +24,6 @@
     "website": "https://www.etyy.com/"
   },
   {
-    "name": "山东省肿瘤医院",
-    "aliases": ["山东省肿瘤医院", "山东省肿瘤防治研究院"],
-    "type": "医院",
-    "website": "https://www.sd-cancer.com/"
-  },
-  {
     "name": "山东中医药大学附属医院",
     "aliases": ["山东中医药大学附属医院", "山东省中医院"],
     "type": "医院",
