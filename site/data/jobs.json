@@ -1,1 +1,153 @@
-{"updated_at":null,"jobs":[],"sources":[],"disclaimer":"尚未执行首次采集。招聘公告和报名时间以招聘单位官网为准。"}
+{
+  "updated_at": "2026-10-08T10:12:46+08:00",
+  "sources": [
+    {
+      "name": "山东大学人才招聘网",
+      "url": "https://rsrczp.sdu.edu.cn/",
+      "status": "error",
+      "found": 0,
+      "error": "HTTPSConnectionPool(host='rsrczp.sdu.edu.cn', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED"
+    },
+    {
+      "name": "山东第一医科大学人事部",
+      "url": "https://personnel.sdfmu.edu.cn/",
+      "status": "ok",
+      "found": 6,
+      "error": ""
+    },
+    {
+      "name": "山东大学齐鲁医院",
+      "url": "https://www.qiluhospital.com/list-313-2.html",
+      "status": "error",
+      "found": 0,
+      "error": "420 Client Error:  for url: https://www.qiluhospital.com/list-313-2.html"
+    },
+    {
+      "name": "山东省立医院",
+      "url": "https://www.sph.com.cn/Html/News/Columns/124/Index.html",
+      "status": "ok",
+      "found": 3,
+      "error": ""
+    }
+  ],
+  "jobs": [
+    {
+      "id": "3d38a165c23b96e3",
+      "source": "山东省立医院",
+      "type": "医院",
+      "title": "山东第一医科大学附属省立医院（山东省立医院）2026年专科医师规范化培训招收简章",
+      "url": "https://www.sph.com.cn/Html/News/Articles/42175.html",
+      "published": "2026-09-02",
+      "deadline": null,
+      "phd": false,
+      "deadline_status": "未核实",
+      "collected_at": "2026-10-08T10:12:42+08:00",
+      "first_seen": "2026-10-08T10:12:42+08:00"
+    },
+    {
+      "id": "d0dce1dc3af29b82",
+      "source": "山东省立医院",
+      "type": "医院",
+      "title": "关于山东第一医科大学附属省立医院（山东省立医院）2026年中级岗位工作人员公开招聘核减人数的公告",
+      "url": "https://www.sph.com.cn/Html/News/Articles/38807.html",
+      "published": "2026-06-13",
+      "deadline": null,
+      "phd": false,
+      "deadline_status": "未核实",
+      "collected_at": "2026-10-08T10:12:42+08:00",
+      "first_seen": "2026-10-08T10:12:42+08:00"
+    },
+    {
+      "id": "0e04dbc3cdd459eb",
+      "source": "山东省立医院",
+      "type": "医院",
+      "title": "山东第一医科大学附属省立医院（山东省立医院） 2026年公开招聘聘用制工作人员进入考核范围人员名单",
+      "url": "https://www.sph.com.cn/Html/News/Articles/38453.html",
+      "published": "2026-05-26",
+      "deadline": null,
+      "phd": false,
+      "deadline_status": "未核实",
+      "collected_at": "2026-10-08T10:12:42+08:00",
+      "first_seen": "2026-10-08T10:12:42+08:00"
+    },
+    {
+      "id": "9073507865696082",
+      "source": "山东第一医科大学人事部",
+      "type": "高校",
+      "title": "南开大学以“四个强化”深入推进新时代人才队伍建设",
+      "url": "https://personnel.sdfmu.edu.cn/info/1060/4961.htm",
+      "published": "2025-05-27",
+      "deadline": null,
+      "phd": false,
+      "deadline_status": "未核实",
+      "collected_at": "2026-10-08T10:12:28+08:00",
+      "first_seen": "2026-10-08T10:12:28+08:00"
+    },
+    {
+      "id": "84c889146539ed01",
+      "source": "山东第一医科大学人事部",
+      "type": "高校",
+      "title": "10 2026-09 山东第一医科大学附属皮肤病医院2026年公开招聘高级专业技术岗位及博士研究生工作人员公告",
+      "url": "https://personnel.sdfmu.edu.cn/info/1026/6471.htm",
+      "published": null,
+      "deadline": null,
+      "phd": true,
+      "deadline_status": "未核实",
+      "collected_at": "2026-10-08T10:12:28+08:00",
+      "first_seen": "2026-10-08T10:12:28+08:00"
+    },
+    {
+      "id": "2f2646aa54ecc9a3",
+      "source": "山东第一医科大学人事部",
+      "type": "高校",
+      "title": "18 2026-08 山东第一医科大学第二附属医院2026年公开招聘第二批高级专业技术岗位工作人员公告",
+      "url": "https://personnel.sdfmu.edu.cn/info/1026/6371.htm",
+      "published": null,
+      "deadline": "2026-11-30",
+      "phd": false,
+      "deadline_status": "从公告正文提取，需核实",
+      "collected_at": "2026-10-08T10:12:28+08:00",
+      "first_seen": "2026-10-08T10:12:28+08:00"
+    },
+    {
+      "id": "c01a744341dfc1cb",
+      "source": "山东第一医科大学人事部",
+      "type": "高校",
+      "title": "18 2026-08 山东第一医科大学附属职业病医院(山东省职业病医院)2026年度公开招聘高级专业技术岗位工作人员公告",
+      "url": "https://personnel.sdfmu.edu.cn/info/1026/6361.htm",
+      "published": null,
+      "deadline": "2026-08-26",
+      "phd": false,
+      "deadline_status": "从公告正文提取，需核实",
+      "collected_at": "2026-10-08T10:12:28+08:00",
+      "first_seen": "2026-10-08T10:12:28+08:00"
+    },
+    {
+      "id": "d145fdaaf976d2bf",
+      "source": "山东第一医科大学人事部",
+      "type": "高校",
+      "title": "13 2026-08 山东第一医科大学第二附属医院2026年公开招聘人员公告",
+      "url": "https://personnel.sdfmu.edu.cn/info/1026/6351.htm",
+      "published": null,
+      "deadline": null,
+      "phd": false,
+      "deadline_status": "未核实",
+      "collected_at": "2026-10-08T10:12:28+08:00",
+      "first_seen": "2026-10-08T10:12:28+08:00"
+    },
+    {
+      "id": "a21fe5f0aea3c2d3",
+      "source": "山东第一医科大学人事部",
+      "type": "高校",
+      "title": "05 2026-08 山东省寄生虫病防治研究所2026年公开招聘人员公告",
+      "url": "https://personnel.sdfmu.edu.cn/info/1026/6341.htm",
+      "published": null,
+      "deadline": null,
+      "phd": false,
+      "deadline_status": "未核实",
+      "collected_at": "2026-10-08T10:12:28+08:00",
+      "first_seen": "2026-10-08T10:12:28+08:00"
+    }
+  ],
+  "disclaimer": "公告索引仅供参考；是否招聘、报名期限、学历专业要求以原文与附件为准。"
+}
