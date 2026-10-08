@@ -17,6 +17,15 @@ on:
       - "scripts/**"
       - "site/**"
       - "tests/**"
+  push:
+    branches-ignore:
+      - main
+    paths:
+      - ".github/workflows/collect.yml"
+      - "requirements.txt"
+      - "scripts/**"
+      - "site/**"
+      - "tests/**"
 
 permissions:
   contents: write
@@ -60,7 +69,7 @@ jobs:
           python -m json.tool scripts/source_candidates.json >/dev/null
 
   source-audit:
-    if: github.event_name == 'workflow_dispatch' && inputs.source_audit
+    if: (github.event_name == 'workflow_dispatch' && inputs.source_audit) || github.event_name == 'push'
     needs: test
     runs-on: ubuntu-latest
     steps:
