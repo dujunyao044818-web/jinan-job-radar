@@ -18,7 +18,7 @@ on:
       - "site/**"
       - "tests/**"
   push:
-    branches-ignore:
+    branches:
       - main
     paths:
       - ".github/workflows/collect.yml"
