@@ -37,6 +37,7 @@ evidence 保存正文中支持结构化字段的短文本。发布日期还可�
     node --test tests/frontend.test.mjs
     python -m json.tool scripts/sources.json >/dev/null
     python -m json.tool scripts/source_candidates.json >/dev/null
+    python -m json.tool scripts/source_candidates_hospitals.json >/dev/null
 
 测试覆盖公告提取、日期与截止日期、标题清洗、博士评分、专业匹配、资格限制、URL 去重、非招聘过滤、来源失败后的历史保留、JSON 结构和前端筛选排序。
 

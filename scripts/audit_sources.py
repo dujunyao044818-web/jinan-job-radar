@@ -63,6 +63,9 @@ def audit_one(candidate, session):
         home_soup = BeautifulSoup(home.text, "html.parser")
         identity_text = clean_text((home_soup.title.get_text(" ", strip=True) if home_soup.title else "") + " " + home_soup.get_text(" ", strip=True)[:4000])
         result["identity_confirmed"] = any(alias in identity_text for alias in candidate["aliases"])
+        home_count, home_titles = count_notices(home.text)
+        if home_count:
+            result.update(recruitment_url=candidate["website"], notices_found=home_count, sample_titles=home_titles)
         links = candidate_links(home.text, candidate["website"])
         for link in links[:15]:
             check = {"url": link["url"], "label": link["text"], "status": "error", "notices_found": None}
@@ -72,7 +75,7 @@ def audit_one(candidate, session):
                 response.encoding = response.apparent_encoding or "utf-8"
                 count, titles = count_notices(response.text)
                 check.update(status="ok", notices_found=count)
-                if count and result["recruitment_url"] is None:
+                if count > (result["notices_found"] or 0):
                     result.update(recruitment_url=link["url"], notices_found=count, sample_titles=titles)
             except Exception as exc:
                 check["error"] = f"{type(exc).__name__}: {clean_text(str(exc))[:160]}"

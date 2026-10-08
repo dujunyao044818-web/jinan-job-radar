@@ -20,15 +20,15 @@
 
 | 来源 | 官方招聘栏目 | 采集方式 | 2026-10-08 云端抽样 |
 | --- | --- | --- | --- |
-| 山东大学人才招聘网 | <https://rsrczp.sdu.edu.cn/> | HTML 列表、详情及附件 | 成功，识别 11 条目标公告 |
+| 山东大学人才招聘网 | <https://rsrczp.sdu.edu.cn/> | HTML 列表、详情及附件 | GitHub Actions 证书主机名校验失败，替代栏目核验中 |
 | 山东第一医科大学人事部 | <https://personnel.sdfmu.edu.cn/> | HTML 列表、详情及附件 | 成功，识别 6 条目标公告 |
 | 山东大学齐鲁医院 | <https://www.qiluhospital.com/list-313-2.html> | HTML 列表、详情及附件 | 失败，官方站返回 HTTP 420 |
 | 山东省立医院 | <https://www.sph.com.cn/Html/News/Columns/124/Index.html> | HTML 列表、详情及附件 | 成功，严格过滤后识别 1 条目标公告 |
-| 山东第一医科大学附属肿瘤医院 | <https://www.sd-cancer.com/tender_sub/> | HTML 列表、详情及附件 | 候选核验成功，完整采集复核中 |
+| 山东第一医科大学附属肿瘤医院 | <https://www.sd-cancer.com/tender_sub/> | HTML 列表、详情及附件 | 成功，识别 13 条目标公告 |
 
 这里的数量是当次列表提取结果，不等于当前仍在报名的岗位数量。齐鲁医院的 420 不会被绕过；在找到并验证官方替代栏目之前继续保留失败状态。
 
-第一批 6 个医院候选官网已完成核验，只有山东第一医科大学附属肿瘤医院通过官网身份、具体招聘栏目和真实公告三项检查。其余 5 个仍存放在 [scripts/source_candidates.json](scripts/source_candidates.json)，不会参与生产采集。这避免把官网首页可访问误报成招聘采集成功。
+第一批 6 个医院候选官网已完成核验，只有山东第一医科大学附属肿瘤医院通过官网身份、具体招聘栏目和真实公告三项检查。其余 5 个记录在 [scripts/source_candidates_hospitals.json](scripts/source_candidates_hospitals.json)，不会参与生产采集。第二批 6 个高校候选位于 [scripts/source_candidates.json](scripts/source_candidates.json)，正按同一标准核验。
 
 ## 本地开发
 

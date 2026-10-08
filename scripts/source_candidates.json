@@ -1,32 +1,38 @@
 [
   {
-    "name": "山东大学齐鲁第二医院",
-    "aliases": ["山东大学齐鲁第二医院", "齐鲁第二医院", "山大二院"],
-    "type": "医院",
-    "website": "https://www.qlhospital.com/"
+    "name": "山东大学官方招聘栏目",
+    "aliases": ["山东大学"],
+    "type": "高校",
+    "website": "https://www.sdu.edu.cn/sdrw/rczp.htm"
   },
   {
-    "name": "山东第一医科大学第一附属医院（山东省千佛山医院）",
-    "aliases": ["山东第一医科大学第一附属医院", "山东省千佛山医院", "千佛山医院"],
-    "type": "医院",
-    "website": "https://www.sdhospital.com.cn/"
+    "name": "山东中医药大学人事处",
+    "aliases": ["山东中医药大学"],
+    "type": "高校",
+    "website": "https://rsc.sdutcm.edu.cn/"
   },
   {
-    "name": "济南市中心医院",
-    "aliases": ["济南市中心医院"],
-    "type": "医院",
-    "website": "https://www.zxyy.cn/"
+    "name": "济南大学人力资源处",
+    "aliases": ["济南大学"],
+    "type": "高校",
+    "website": "https://rsc.ujn.edu.cn/"
   },
   {
-    "name": "济南市儿童医院",
-    "aliases": ["济南市儿童医院", "山东大学附属儿童医院"],
-    "type": "医院",
-    "website": "https://www.etyy.com/"
+    "name": "齐鲁工业大学人事处",
+    "aliases": ["齐鲁工业大学", "山东省科学院"],
+    "type": "高校",
+    "website": "https://rsc.qlu.edu.cn/"
   },
   {
-    "name": "山东中医药大学附属医院",
-    "aliases": ["山东中医药大学附属医院", "山东省中医院"],
-    "type": "医院",
-    "website": "https://www.sdzydfy.com/"
+    "name": "山东师范大学人力资源处",
+    "aliases": ["山东师范大学"],
+    "type": "高校",
+    "website": "https://www.rsc.sdnu.edu.cn/"
+  },
+  {
+    "name": "山东财经大学人事处",
+    "aliases": ["山东财经大学"],
+    "type": "高校",
+    "website": "https://rsc.sdufe.edu.cn/"
   }
 ]
