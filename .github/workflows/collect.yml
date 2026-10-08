@@ -71,7 +71,7 @@ jobs:
           python -m json.tool scripts/source_candidates_universities.json >/dev/null
 
   source-audit:
-    if: (github.event_name == 'workflow_dispatch' && inputs.source_audit) || github.event_name == 'push'
+    if: github.event_name == 'workflow_dispatch' && inputs.source_audit
     needs: test
     runs-on: ubuntu-latest
     steps:
@@ -90,27 +90,12 @@ jobs:
       - name: Audit candidate official sites
         run: python scripts/audit_sources.py --output source-audit.json
 
-      - name: Validate promoted sources
-        continue-on-error: true
-        run: |
-          python scripts/collect.py
-          cp site/data/jobs.json collection-validation.json
-
       - name: Upload audit evidence
         uses: actions/upload-artifact@v4
         with:
           name: source-audit-${{ github.run_id }}
           path: source-audit.json
           if-no-files-found: error
-
-      - name: Save branch audit evidence
-        if: github.event_name == 'push'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add source-audit.json collection-validation.json
-          git commit -m "Record source and collection audit evidence"
-          git push
 
   collect:
     if: github.event_name != 'pull_request' && !(github.event_name == 'workflow_dispatch' && inputs.source_audit)
@@ -158,6 +143,16 @@ jobs:
           name: collection-${{ github.run_id }}
           path: site/data/jobs.json
           if-no-files-found: error
+
+      - name: Save final branch collection evidence
+        if: github.event_name == 'push'
+        run: |
+          cp site/data/jobs.json collection-validation.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add collection-validation.json
+          git commit -m "Record final collection validation"
+          git push
 
 
       - name: Save recruitment results on main

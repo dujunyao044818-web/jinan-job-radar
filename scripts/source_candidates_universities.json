@@ -17,6 +17,11 @@
   {
     "name": "山东师范大学人力资源处",
     "website": "https://www.rsc.sdnu.edu.cn/",
-    "last_audit": "TLS 证书校验失败，尚未验证替代地址"
+    "last_audit": "www 子域证书失败；已改用通过校验的 rsc.sdnu.edu.cn/gkzp.htm 并移入生产"
+  },
+  {
+    "name": "山东财经大学人事处",
+    "website": "https://rsc.sdufe.edu.cn/index/rczp.htm",
+    "last_audit": "官网与候选公告已确认，但完整采集未识别到目标公告，暂不进入生产"
   }
 ]

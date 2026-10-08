@@ -1,21 +1,9 @@
 [
   {
-    "name": "齐鲁工业大学人事处招聘栏目",
-    "aliases": ["齐鲁工业大学", "山东省科学院"],
-    "type": "高校",
-    "website": "https://rsc.qlu.edu.cn/575/list.htm"
-  },
-  {
     "name": "山东大学官网",
     "aliases": ["山东大学"],
     "type": "高校",
     "website": "https://www.sdu.edu.cn/"
-  },
-  {
-    "name": "山东师范大学人力资源处",
-    "aliases": ["山东师范大学"],
-    "type": "高校",
-    "website": "https://rsc.sdnu.edu.cn/"
   },
   {
     "name": "山东中医药大学官网",
