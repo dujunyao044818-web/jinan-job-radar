@@ -25,10 +25,12 @@
 | 山东大学齐鲁医院 | <https://www.qiluhospital.com/list-313-2.html> | HTML 列表、详情及附件 | 失败，官方站返回 HTTP 420 |
 | 山东省立医院 | <https://www.sph.com.cn/Html/News/Columns/124/Index.html> | HTML 列表、详情及附件 | 成功，严格过滤后识别 1 条目标公告 |
 | 山东第一医科大学附属肿瘤医院 | <https://www.sd-cancer.com/tender_sub/> | HTML 列表、详情及附件 | 成功，识别 13 条目标公告 |
+| 济南大学人力资源处 | <https://rsc.ujn.edu.cn/rczp.htm> | HTML 列表、详情及附件 | 候选核验成功，完整采集复核中 |
+| 山东财经大学人事处 | <https://rsc.sdufe.edu.cn/index/rczp.htm> | HTML 列表、详情及附件 | 候选核验成功，完整采集复核中 |
 
 这里的数量是当次列表提取结果，不等于当前仍在报名的岗位数量。齐鲁医院的 420 不会被绕过；在找到并验证官方替代栏目之前继续保留失败状态。
 
-第一批 6 个医院候选官网已完成核验，只有山东第一医科大学附属肿瘤医院通过官网身份、具体招聘栏目和真实公告三项检查。其余 5 个记录在 [scripts/source_candidates_hospitals.json](scripts/source_candidates_hospitals.json)，不会参与生产采集。第二批 6 个高校候选位于 [scripts/source_candidates.json](scripts/source_candidates.json)，正按同一标准核验。
+第一批 6 个医院候选官网已完成核验，只有山东第一医科大学附属肿瘤医院通过三项检查。第二批 6 个高校候选中，济南大学与山东财经大学通过；其余结果记录在 [scripts/source_candidates_universities.json](scripts/source_candidates_universities.json)。第三批 6 个精确候选位于 [scripts/source_candidates_batch3.json](scripts/source_candidates_batch3.json)，继续核验齐鲁工业大学列表页、山东大学替代入口及省市人社渠道。
 
 ## 本地开发
 

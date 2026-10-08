@@ -94,7 +94,7 @@ def audit_one(candidate, session):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--candidates", type=Path, default=ROOT / "scripts/source_candidates.json")
+    parser.add_argument("--candidates", type=Path, default=ROOT / "scripts/source_candidates_batch3.json")
     parser.add_argument("--output", type=Path, default=ROOT / "source-audit.json")
     args = parser.parse_args()
     candidates = json.loads(args.candidates.read_text(encoding="utf-8"))

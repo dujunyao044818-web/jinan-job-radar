@@ -4,7 +4,7 @@
 
 每次只核验 4–6 个单位。
 
-1. 将候选单位名称、别名、类型和官网根地址加入 scripts/source_candidates.json。
+1. 将本批 4–6 个候选单位名称、别名、类型和官网地址加入 scripts/source_candidates_batch3.json（下一批可按同一格式替换）。
 2. 在 Actions 手动运行 collect.yml，勾选 source_audit。
 3. 下载 source-audit artifact，逐项检查：
    - 页面标题或正文能确认单位身份；
@@ -36,8 +36,9 @@ evidence 保存正文中支持结构化字段的短文本。发布日期还可�
     python -B -m unittest discover -s tests -p "test_*.py" -v
     node --test tests/frontend.test.mjs
     python -m json.tool scripts/sources.json >/dev/null
-    python -m json.tool scripts/source_candidates.json >/dev/null
+    python -m json.tool scripts/source_candidates_batch3.json >/dev/null
     python -m json.tool scripts/source_candidates_hospitals.json >/dev/null
+    python -m json.tool scripts/source_candidates_universities.json >/dev/null
 
 测试覆盖公告提取、日期与截止日期、标题清洗、博士评分、专业匹配、资格限制、URL 去重、非招聘过滤、来源失败后的历史保留、JSON 结构和前端筛选排序。
 

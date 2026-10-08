@@ -58,5 +58,29 @@
     "verified_at": "2026-10-08",
     "detail_limit": 12,
     "enabled": true
+  },
+  {
+    "name": "济南大学人力资源处",
+    "aliases": ["济南大学"],
+    "type": "高校",
+    "website": "https://rsc.ujn.edu.cn/",
+    "url": "https://rsc.ujn.edu.cn/rczp.htm",
+    "domain": "rsc.ujn.edu.cn",
+    "method": "官方人才招聘栏目 HTML 列表、详情及附件解析",
+    "verified_at": "2026-10-08",
+    "detail_limit": 12,
+    "enabled": true
+  },
+  {
+    "name": "山东财经大学人事处",
+    "aliases": ["山东财经大学"],
+    "type": "高校",
+    "website": "https://rsc.sdufe.edu.cn/",
+    "url": "https://rsc.sdufe.edu.cn/index/rczp.htm",
+    "domain": "rsc.sdufe.edu.cn",
+    "method": "官方人才招聘栏目 HTML 列表、详情及附件解析",
+    "verified_at": "2026-10-08",
+    "detail_limit": 12,
+    "enabled": true
   }
 ]

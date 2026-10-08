@@ -1,0 +1,22 @@
+[
+  {
+    "name": "山东大学官方招聘栏目",
+    "website": "https://www.sdu.edu.cn/sdrw/rczp.htm",
+    "last_audit": "HTTP 404，尚未找到可替代人才招聘网的官方栏目"
+  },
+  {
+    "name": "山东中医药大学人事处",
+    "website": "https://rsc.sdutcm.edu.cn/",
+    "last_audit": "域名无法解析，尚未验证"
+  },
+  {
+    "name": "齐鲁工业大学人事处",
+    "website": "https://rsc.qlu.edu.cn/",
+    "last_audit": "官网与真实招聘公告已确认，具体招聘列表页待核验"
+  },
+  {
+    "name": "山东师范大学人力资源处",
+    "website": "https://www.rsc.sdnu.edu.cn/",
+    "last_audit": "TLS 证书校验失败，尚未验证替代地址"
+  }
+]
