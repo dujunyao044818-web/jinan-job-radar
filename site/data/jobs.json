@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-09T15:30:04+08:00",
+  "updated_at": "2026-10-10T15:17:48+08:00",
   "collection_status": "partial",
   "statistics": {
     "sources_total": 8,
     "sources_successful": 6,
     "jobs_total": 25,
-    "phd_jobs": 16
+    "phd_jobs": 17
   },
   "sources": [
     {
@@ -18,7 +18,7 @@
       "status": "error",
       "found": null,
       "new": 0,
-      "last_attempt_at": "2026-10-09T15:30:04+08:00",
+      "last_attempt_at": "2026-10-10T15:17:48+08:00",
       "last_success_at": null,
       "error": "HTTPSConnectionPool(host='rsrczp.sdu.edu.cn', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not val"
     },
@@ -31,8 +31,8 @@
       "status": "ok",
       "found": 5,
       "new": 0,
-      "last_attempt_at": "2026-10-09T15:30:04+08:00",
-      "last_success_at": "2026-10-09T15:30:04+08:00",
+      "last_attempt_at": "2026-10-10T15:17:48+08:00",
+      "last_success_at": "2026-10-10T15:17:48+08:00",
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
       "status": "error",
       "found": null,
       "new": 0,
-      "last_attempt_at": "2026-10-09T15:30:04+08:00",
+      "last_attempt_at": "2026-10-10T15:17:48+08:00",
       "last_success_at": null,
       "error": "420 Client Error: for url: https://www.qiluhospital.com/list-313-2.html"
     },
@@ -57,8 +57,8 @@
       "status": "ok",
       "found": 1,
       "new": 0,
-      "last_attempt_at": "2026-10-09T15:30:04+08:00",
-      "last_success_at": "2026-10-09T15:30:04+08:00",
+      "last_attempt_at": "2026-10-10T15:17:48+08:00",
+      "last_success_at": "2026-10-10T15:17:48+08:00",
       "error": ""
     },
     {
@@ -70,8 +70,8 @@
       "status": "ok",
       "found": 13,
       "new": 0,
-      "last_attempt_at": "2026-10-09T15:30:04+08:00",
-      "last_success_at": "2026-10-09T15:30:04+08:00",
+      "last_attempt_at": "2026-10-10T15:17:48+08:00",
+      "last_success_at": "2026-10-10T15:17:48+08:00",
       "error": ""
     },
     {
@@ -82,9 +82,9 @@
       "method": "官方人才招聘栏目 HTML 列表、详情及附件解析",
       "status": "ok",
       "found": 1,
-      "new": 1,
-      "last_attempt_at": "2026-10-09T15:30:04+08:00",
-      "last_success_at": "2026-10-09T15:30:04+08:00",
+      "new": 0,
+      "last_attempt_at": "2026-10-10T15:17:48+08:00",
+      "last_success_at": "2026-10-10T15:17:48+08:00",
       "error": ""
     },
     {
@@ -96,8 +96,8 @@
       "status": "ok",
       "found": 1,
       "new": 0,
-      "last_attempt_at": "2026-10-09T15:30:04+08:00",
-      "last_success_at": "2026-10-09T15:30:04+08:00",
+      "last_attempt_at": "2026-10-10T15:17:48+08:00",
+      "last_success_at": "2026-10-10T15:17:48+08:00",
       "error": ""
     },
     {
@@ -109,8 +109,8 @@
       "status": "ok",
       "found": 1,
       "new": 0,
-      "last_attempt_at": "2026-10-09T15:30:04+08:00",
-      "last_success_at": "2026-10-09T15:30:04+08:00",
+      "last_attempt_at": "2026-10-10T15:17:48+08:00",
+      "last_success_at": "2026-10-10T15:17:48+08:00",
       "error": ""
     }
   ],
@@ -141,7 +141,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -160,7 +160,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "4a8e0f1a204340b42858"
@@ -214,7 +214,7 @@
         "education": "学历（学位）证书原件及复印件",
         "degree": "学位）证书原件及复印件"
       },
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 7,
@@ -239,7 +239,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T10:12:42+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
@@ -276,7 +276,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -295,7 +295,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "1ab2fba47db57c3f6a8d"
@@ -384,7 +384,7 @@
         "education": "学历学位,否则不予接收",
         "degree": "学位,否则不予接收"
       },
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 9,
@@ -409,7 +409,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "e538a3a703f702814ae8"
@@ -433,38 +433,57 @@
       "deadline_reliable": false,
       "education": "学位,否则不予接收",
       "degree": ",否则不予接收",
-      "specialties": [],
+      "specialties": [
+        "基础医学"
+      ],
       "recruitment_count": "未核实",
       "location": "未核实",
       "attachments": [],
-      "evidence": {},
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "evidence": {
+        "education": "学历学位,否则不予接收",
+        "degree": "学位,否则不予接收"
+      },
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
-        "category": "非目标岗位",
-        "score": 0,
+        "category": "博士岗位",
+        "score": 9,
         "reasons": [
-          "未识别到博士或优先专业依据"
+          "公告明确提及博士或高层次人才",
+          "匹配优先专业：基础医学",
+          "存在资格限制，需人工核实"
         ],
-        "specialties": [],
-        "restrictions": [],
+        "specialties": [
+          "基础医学"
+        ],
+        "restrictions": [
+          "要求医师资格证",
+          "要求特定职称"
+        ],
         "is_postdoc": false
       },
-      "phd": false,
-      "restrictions": [],
-      "detail_error": "详情解析失败：HTTPError",
+      "phd": true,
+      "restrictions": [
+        "要求医师资格证",
+        "要求特定职称"
+      ],
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
           "observed_at": "2026-10-09T15:30:04+08:00",
           "previous_fingerprint": "5a43984a4f556e46cd48",
           "summary": "公告结构化字段发生变化，请核对官方原文"
+        },
+        {
+          "observed_at": "2026-10-10T15:17:48+08:00",
+          "previous_fingerprint": "c1399360aff713ae8c90",
+          "summary": "公告结构化字段发生变化，请核对官方原文"
         }
       ],
-      "fingerprint": "c1399360aff713ae8c90"
+      "fingerprint": "5a43984a4f556e46cd48"
     },
     {
       "id": "0da372413cfd67d500b2",
@@ -492,7 +511,7 @@
         "degree": "学位授予权",
         "recruitment_count": "招聘人数 1"
       },
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 7,
@@ -508,8 +527,8 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-09T15:30:04+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
-      "is_newly_discovered": true,
+      "last_seen": "2026-10-10T15:17:48+08:00",
+      "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "4c6d12a0c531b7ca4c30"
     },
@@ -541,7 +560,7 @@
       "evidence": {
         "education": "学历学位"
       },
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 9,
@@ -560,7 +579,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "67eba10a85cea7d20f01"
@@ -584,38 +603,48 @@
       "deadline_reliable": false,
       "education": "学位",
       "degree": "未核实",
-      "specialties": [],
+      "specialties": [
+        "基础医学"
+      ],
       "recruitment_count": "未核实",
       "location": "未核实",
       "attachments": [],
-      "evidence": {},
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "evidence": {
+        "education": "学历学位"
+      },
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
-        "category": "非目标岗位",
-        "score": 0,
+        "category": "可能符合专业",
+        "score": 3,
         "reasons": [
-          "未识别到博士或优先专业依据"
+          "匹配优先专业：基础医学"
         ],
-        "specialties": [],
+        "specialties": [
+          "基础医学"
+        ],
         "restrictions": [],
         "is_postdoc": false
       },
       "phd": false,
       "restrictions": [],
-      "detail_error": "详情解析失败：HTTPError",
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
           "observed_at": "2026-10-09T15:30:04+08:00",
           "previous_fingerprint": "b95f33a9b1f790f7be0a",
           "summary": "公告结构化字段发生变化，请核对官方原文"
+        },
+        {
+          "observed_at": "2026-10-10T15:17:48+08:00",
+          "previous_fingerprint": "1c0d6c8f3029185ab90e",
+          "summary": "公告结构化字段发生变化，请核对官方原文"
         }
       ],
-      "fingerprint": "1c0d6c8f3029185ab90e"
+      "fingerprint": "b95f33a9b1f790f7be0a"
     },
     {
       "id": "dae08a7720023ad723d6",
@@ -636,38 +665,48 @@
       "deadline_reliable": false,
       "education": "未核实",
       "degree": "未核实",
-      "specialties": [],
+      "specialties": [
+        "基础医学",
+        "生物医学"
+      ],
       "recruitment_count": "未核实",
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
-        "category": "非目标岗位",
-        "score": 0,
+        "category": "可能符合专业",
+        "score": 3,
         "reasons": [
-          "未识别到博士或优先专业依据"
+          "匹配优先专业：基础医学、生物医学"
         ],
-        "specialties": [],
+        "specialties": [
+          "基础医学",
+          "生物医学"
+        ],
         "restrictions": [],
         "is_postdoc": false
       },
       "phd": false,
       "restrictions": [],
-      "detail_error": "详情解析失败：HTTPError",
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
           "observed_at": "2026-10-09T15:30:04+08:00",
           "previous_fingerprint": "b607ade04cd405719662",
           "summary": "公告结构化字段发生变化，请核对官方原文"
+        },
+        {
+          "observed_at": "2026-10-10T15:17:48+08:00",
+          "previous_fingerprint": "92d736aaa4f3fe5e5db1",
+          "summary": "公告结构化字段发生变化，请核对官方原文"
         }
       ],
-      "fingerprint": "92d736aaa4f3fe5e5db1"
+      "fingerprint": "b607ade04cd405719662"
     },
     {
       "id": "f5a50b75ec203df467f2",
@@ -688,38 +727,47 @@
       "deadline_reliable": false,
       "education": "未核实",
       "degree": "未核实",
-      "specialties": [],
+      "specialties": [
+        "基础医学"
+      ],
       "recruitment_count": "未核实",
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
-        "score": 7,
+        "score": 10,
         "reasons": [
-          "公告明确提及博士后"
+          "公告明确提及博士后",
+          "匹配优先专业：基础医学"
         ],
-        "specialties": [],
+        "specialties": [
+          "基础医学"
+        ],
         "restrictions": [],
         "is_postdoc": true
       },
       "phd": true,
       "restrictions": [],
-      "detail_error": "详情解析失败：HTTPError",
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
           "observed_at": "2026-10-09T15:30:04+08:00",
           "previous_fingerprint": "5aed5baaa43bd8893f00",
           "summary": "公告结构化字段发生变化，请核对官方原文"
+        },
+        {
+          "observed_at": "2026-10-10T15:17:48+08:00",
+          "previous_fingerprint": "231807ad5b73112d871d",
+          "summary": "公告结构化字段发生变化，请核对官方原文"
         }
       ],
-      "fingerprint": "231807ad5b73112d871d"
+      "fingerprint": "5aed5baaa43bd8893f00"
     },
     {
       "id": "08234c86a549d11fdc41",
@@ -740,38 +788,54 @@
       "deadline_reliable": false,
       "education": "未核实",
       "degree": "未核实",
-      "specialties": [],
+      "specialties": [
+        "分子生物学",
+        "基础医学"
+      ],
       "recruitment_count": "未核实",
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
-        "score": 7,
+        "score": 10,
         "reasons": [
-          "公告明确提及博士后"
+          "公告明确提及博士后",
+          "匹配优先专业：分子生物学、基础医学",
+          "存在资格限制，需人工核实"
         ],
-        "specialties": [],
-        "restrictions": [],
+        "specialties": [
+          "分子生物学",
+          "基础医学"
+        ],
+        "restrictions": [
+          "要求特定职称"
+        ],
         "is_postdoc": true
       },
       "phd": true,
-      "restrictions": [],
-      "detail_error": "详情解析失败：HTTPError",
+      "restrictions": [
+        "要求特定职称"
+      ],
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
           "observed_at": "2026-10-09T15:30:04+08:00",
           "previous_fingerprint": "6131b72274f912b993f6",
           "summary": "公告结构化字段发生变化，请核对官方原文"
+        },
+        {
+          "observed_at": "2026-10-10T15:17:48+08:00",
+          "previous_fingerprint": "73dd2721249b0af0bbf4",
+          "summary": "公告结构化字段发生变化，请核对官方原文"
         }
       ],
-      "fingerprint": "73dd2721249b0af0bbf4"
+      "fingerprint": "6131b72274f912b993f6"
     },
     {
       "id": "b34cd1e4983b1a77686c",
@@ -792,38 +856,54 @@
       "deadline_reliable": false,
       "education": "未核实",
       "degree": "教学案例库",
-      "specialties": [],
+      "specialties": [
+        "基础医学"
+      ],
       "recruitment_count": "未核实",
       "location": "未核实",
       "attachments": [],
-      "evidence": {},
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "evidence": {
+        "degree": "学位教学案例库"
+      },
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
-        "score": 7,
+        "score": 10,
         "reasons": [
-          "公告明确提及博士后"
+          "公告明确提及博士后",
+          "匹配优先专业：基础医学",
+          "存在资格限制，需人工核实"
         ],
-        "specialties": [],
-        "restrictions": [],
+        "specialties": [
+          "基础医学"
+        ],
+        "restrictions": [
+          "要求特定职称"
+        ],
         "is_postdoc": true
       },
       "phd": true,
-      "restrictions": [],
-      "detail_error": "详情解析失败：HTTPError",
+      "restrictions": [
+        "要求特定职称"
+      ],
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
           "observed_at": "2026-10-09T15:30:04+08:00",
           "previous_fingerprint": "43b34d491877532a14f4",
           "summary": "公告结构化字段发生变化，请核对官方原文"
+        },
+        {
+          "observed_at": "2026-10-10T15:17:48+08:00",
+          "previous_fingerprint": "ddeba854833050ca24d7",
+          "summary": "公告结构化字段发生变化，请核对官方原文"
         }
       ],
-      "fingerprint": "ddeba854833050ca24d7"
+      "fingerprint": "43b34d491877532a14f4"
     },
     {
       "id": "9a2c7c353da904423139",
@@ -844,38 +924,49 @@
       "deadline_reliable": false,
       "education": "未核实",
       "degree": "未核实",
-      "specialties": [],
+      "specialties": [
+        "基础医学",
+        "生物医学"
+      ],
       "recruitment_count": "未核实",
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
-        "score": 7,
+        "score": 10,
         "reasons": [
-          "公告明确提及博士后"
+          "公告明确提及博士后",
+          "匹配优先专业：基础医学、生物医学"
         ],
-        "specialties": [],
+        "specialties": [
+          "基础医学",
+          "生物医学"
+        ],
         "restrictions": [],
         "is_postdoc": true
       },
       "phd": true,
       "restrictions": [],
-      "detail_error": "详情解析失败：HTTPError",
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
           "observed_at": "2026-10-09T15:30:04+08:00",
           "previous_fingerprint": "6f4b230c5e1d2a80b6fb",
           "summary": "公告结构化字段发生变化，请核对官方原文"
+        },
+        {
+          "observed_at": "2026-10-10T15:17:48+08:00",
+          "previous_fingerprint": "ef9f3eb2c10b035f5aa8",
+          "summary": "公告结构化字段发生变化，请核对官方原文"
         }
       ],
-      "fingerprint": "ef9f3eb2c10b035f5aa8"
+      "fingerprint": "6f4b230c5e1d2a80b6fb"
     },
     {
       "id": "87c549da50f5ab082a17",
@@ -896,38 +987,47 @@
       "deadline_reliable": false,
       "education": "未核实",
       "degree": "未核实",
-      "specialties": [],
+      "specialties": [
+        "基础医学"
+      ],
       "recruitment_count": "未核实",
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
-        "score": 7,
+        "score": 10,
         "reasons": [
-          "公告明确提及博士后"
+          "公告明确提及博士后",
+          "匹配优先专业：基础医学"
         ],
-        "specialties": [],
+        "specialties": [
+          "基础医学"
+        ],
         "restrictions": [],
         "is_postdoc": true
       },
       "phd": true,
       "restrictions": [],
-      "detail_error": "详情解析失败：HTTPError",
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
           "observed_at": "2026-10-09T15:30:04+08:00",
           "previous_fingerprint": "e4bf84502372652ea183",
           "summary": "公告结构化字段发生变化，请核对官方原文"
+        },
+        {
+          "observed_at": "2026-10-10T15:17:48+08:00",
+          "previous_fingerprint": "f2cfde4efd7356994645",
+          "summary": "公告结构化字段发生变化，请核对官方原文"
         }
       ],
-      "fingerprint": "f2cfde4efd7356994645"
+      "fingerprint": "e4bf84502372652ea183"
     },
     {
       "id": "623781766c3e168b836d",
@@ -953,7 +1053,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 7,
@@ -970,7 +1070,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "94b705f2fe7845b0a6e6"
@@ -1067,7 +1167,7 @@
         "education": "学历学位作为条件应聘",
         "degree": "学位授权一级学科、 1 个博士专业学位授权类别 、 18 个硕士"
       },
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -1087,7 +1187,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "955436c84d49be6d1301"
@@ -1114,7 +1214,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "非目标岗位",
         "score": 0,
@@ -1130,7 +1230,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "97ad3c2be094f3b1e61f"
@@ -1163,7 +1263,7 @@
         "education": "学历和学位证书、学信网查询的学历、学位认证报告",
         "degree": "学位办批准的皮肤性病学博硕士研究生培养单位和国家卫生行政部门批准"
       },
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 7,
@@ -1179,7 +1279,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T10:12:28+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
@@ -1218,7 +1318,7 @@
         "education": "学历和学位证书、学信网学历学位认证报告、高级专业技术职称证书、执",
         "degree": "学位授权点35个"
       },
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 6,
@@ -1234,7 +1334,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T10:12:28+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
@@ -1274,7 +1374,7 @@
         "education": "学历和学位证书",
         "degree": "学位证书"
       },
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "非目标岗位",
         "score": 0,
@@ -1290,7 +1390,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T10:12:28+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
@@ -1329,7 +1429,7 @@
         "education": "学历和学位证书、学信网学历学位认证报告",
         "degree": "学位授权点35个"
       },
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "非目标岗位",
         "score": 0,
@@ -1345,7 +1445,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T10:12:28+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
@@ -1384,7 +1484,7 @@
         "education": "学历和学位证书、以及学历和学位认证报告（学信网查询下载）、专业技",
         "degree": "学位证书、以及学历和学位认证报告（学信网查询下载）、专业技术职务"
       },
-      "collected_at": "2026-10-09T15:30:04+08:00",
+      "collected_at": "2026-10-10T15:17:48+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 7,
@@ -1400,7 +1500,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T10:12:28+08:00",
-      "last_seen": "2026-10-09T15:30:04+08:00",
+      "last_seen": "2026-10-10T15:17:48+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
