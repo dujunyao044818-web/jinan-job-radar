@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-27T17:45:19+08:00",
+  "updated_at": "2026-11-28T16:58:15+08:00",
   "collection_status": "partial",
   "statistics": {
     "sources_total": 8,
@@ -18,7 +18,7 @@
       "status": "error",
       "found": null,
       "new": 0,
-      "last_attempt_at": "2026-11-27T17:45:19+08:00",
+      "last_attempt_at": "2026-11-28T16:58:15+08:00",
       "last_success_at": null,
       "error": "HTTPSConnectionPool(host='rsrczp.sdu.edu.cn', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not val"
     },
@@ -31,8 +31,8 @@
       "status": "ok",
       "found": 5,
       "new": 0,
-      "last_attempt_at": "2026-11-27T17:45:19+08:00",
-      "last_success_at": "2026-11-27T17:45:19+08:00",
+      "last_attempt_at": "2026-11-28T16:58:15+08:00",
+      "last_success_at": "2026-11-28T16:58:15+08:00",
       "error": ""
     },
     {
@@ -44,7 +44,7 @@
       "status": "error",
       "found": null,
       "new": 0,
-      "last_attempt_at": "2026-11-27T17:45:19+08:00",
+      "last_attempt_at": "2026-11-28T16:58:15+08:00",
       "last_success_at": null,
       "error": "420 Client Error: for url: https://www.qiluhospital.com/list-313-2.html"
     },
@@ -57,8 +57,8 @@
       "status": "ok",
       "found": 2,
       "new": 0,
-      "last_attempt_at": "2026-11-27T17:45:19+08:00",
-      "last_success_at": "2026-11-27T17:45:19+08:00",
+      "last_attempt_at": "2026-11-28T16:58:15+08:00",
+      "last_success_at": "2026-11-28T16:58:15+08:00",
       "error": ""
     },
     {
@@ -70,8 +70,8 @@
       "status": "ok",
       "found": 13,
       "new": 0,
-      "last_attempt_at": "2026-11-27T17:45:19+08:00",
-      "last_success_at": "2026-11-27T17:45:19+08:00",
+      "last_attempt_at": "2026-11-28T16:58:15+08:00",
+      "last_success_at": "2026-11-28T16:58:15+08:00",
       "error": ""
     },
     {
@@ -83,8 +83,8 @@
       "status": "ok",
       "found": 1,
       "new": 0,
-      "last_attempt_at": "2026-11-27T17:45:19+08:00",
-      "last_success_at": "2026-11-27T17:45:19+08:00",
+      "last_attempt_at": "2026-11-28T16:58:15+08:00",
+      "last_success_at": "2026-11-28T16:58:15+08:00",
       "error": ""
     },
     {
@@ -96,8 +96,8 @@
       "status": "ok",
       "found": 3,
       "new": 0,
-      "last_attempt_at": "2026-11-27T17:45:19+08:00",
-      "last_success_at": "2026-11-27T17:45:19+08:00",
+      "last_attempt_at": "2026-11-28T16:58:15+08:00",
+      "last_success_at": "2026-11-28T16:58:15+08:00",
       "error": ""
     },
     {
@@ -109,8 +109,8 @@
       "status": "ok",
       "found": 1,
       "new": 0,
-      "last_attempt_at": "2026-11-27T17:45:19+08:00",
-      "last_success_at": "2026-11-27T17:45:19+08:00",
+      "last_attempt_at": "2026-11-28T16:58:15+08:00",
+      "last_success_at": "2026-11-28T16:58:15+08:00",
       "error": ""
     }
   ],
@@ -164,7 +164,7 @@
         "education": "学历、学位及专业要求",
         "degree": "学位及专业要求"
       },
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 6,
@@ -180,7 +180,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-11-25T17:55:51+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "504e6ca5bf4ffdd826c8"
@@ -211,7 +211,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "可能符合专业",
         "score": 3,
@@ -229,7 +229,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-20T14:08:25+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "5be5e4d898a9e3d70179"
@@ -260,7 +260,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -279,7 +279,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "4a8e0f1a204340b42858"
@@ -333,7 +333,7 @@
         "education": "学历（学位）证书原件及复印件",
         "degree": "学位）证书原件及复印件"
       },
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 7,
@@ -358,7 +358,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T10:12:42+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
@@ -395,7 +395,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -414,7 +414,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "1ab2fba47db57c3f6a8d"
@@ -630,7 +630,7 @@
         "degree": "学位授予权",
         "recruitment_count": "招聘人数 1"
       },
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 7,
@@ -646,7 +646,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-09T15:30:04+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "4c6d12a0c531b7ca4c30"
@@ -854,7 +854,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -874,7 +874,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-11-04T15:35:47+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "984f6300ec3c5f17bb42"
@@ -905,7 +905,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -924,7 +924,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
@@ -967,7 +967,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -992,7 +992,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
@@ -1036,7 +1036,7 @@
       "evidence": {
         "degree": "学位教学案例库"
       },
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -1060,7 +1060,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
@@ -1103,7 +1103,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -1123,7 +1123,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
@@ -1165,7 +1165,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -1184,7 +1184,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
@@ -1237,7 +1237,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -1262,7 +1262,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
@@ -1299,7 +1299,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -1323,7 +1323,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-11-04T15:35:47+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "00d5c359175377039fc4"
@@ -1354,7 +1354,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -1378,7 +1378,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-11-04T15:35:47+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "9cc3475815fd76ec56f3"
@@ -1407,7 +1407,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 7,
@@ -1424,7 +1424,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-11-04T15:35:47+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "bc2e04f087428cd6184a"
@@ -1530,7 +1530,7 @@
         "education": "学历、学位及专业要求",
         "degree": "学位及专业要求"
       },
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 6,
@@ -1546,7 +1546,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-11-24T19:08:34+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "2597c26c87d7a8d65f03"
@@ -1616,7 +1616,7 @@
         "education": "学历学位作为条件应聘",
         "degree": "学位授权一级学科、 1 个博士专业学位授权类别 、 18 个硕士"
       },
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -1636,7 +1636,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-11-23T17:14:40+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "22068797383f1c7ec0bd"
@@ -1670,7 +1670,7 @@
         "degree": "学位证书、学历和学位认证报告（学信网、学位网查询打印）",
         "recruitment_count": "招聘人数1"
       },
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 7,
@@ -1686,7 +1686,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-11-13T16:10:06+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "f6c5cc93e2716685a50b"
@@ -1715,7 +1715,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 7,
@@ -1731,7 +1731,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-11-11T15:49:58+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
@@ -1770,7 +1770,7 @@
         "education": "学历、学位证书和学历、学位认证报告（学信网查询下载）、专业技术资",
         "degree": "学位证书和学历、学位认证报告（学信网查询下载）、专业技术资格证书"
       },
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 7,
@@ -1786,7 +1786,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-11-09T16:08:39+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [
         {
@@ -1825,7 +1825,7 @@
         "education": "学历和学位证书、以及学历和学位认证报告（学信网查询下载）、专业技",
         "degree": "学位证书、以及学历和学位认证报告（学信网查询下载）、专业技术职务"
       },
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 6,
@@ -1846,7 +1846,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-11-03T16:00:02+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "90270f17044a4533698d"
@@ -1958,7 +1958,7 @@
         "degree": "学位授权一级学科、 1 个博士专业学位授权类别 、 18 个硕士",
         "recruitment_count": "招聘人数 1"
       },
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -1978,7 +1978,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-23T14:06:13+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "5019eac058d0494906a3"
@@ -2097,7 +2097,7 @@
         "education": "学历学位作为条件应聘",
         "degree": "学位授权一级学科、 1 个博士专业学位授权类别 、 18 个硕士"
       },
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "博士岗位",
         "score": 10,
@@ -2117,7 +2117,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "955436c84d49be6d1301"
@@ -2144,7 +2144,7 @@
       "location": "未核实",
       "attachments": [],
       "evidence": {},
-      "collected_at": "2026-11-27T17:45:19+08:00",
+      "collected_at": "2026-11-28T16:58:15+08:00",
       "phd_relevance": {
         "category": "非目标岗位",
         "score": 0,
@@ -2160,7 +2160,7 @@
       "excluded": false,
       "excluded_reason": null,
       "first_seen": "2026-10-08T15:00:47+08:00",
-      "last_seen": "2026-11-27T17:45:19+08:00",
+      "last_seen": "2026-11-28T16:58:15+08:00",
       "is_newly_discovered": false,
       "revisions": [],
       "fingerprint": "97ad3c2be094f3b1e61f"
